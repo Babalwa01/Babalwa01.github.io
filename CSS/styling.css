@@ -82,6 +82,10 @@ header {
     color: darkslategray;
 }
 
+.side-menu-item:hover {
+    border-bottom: 2px solid darkslategray;
+}
+
 /* Slide show styling */
 .slide-show {
     display: grid;
