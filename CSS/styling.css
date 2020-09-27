@@ -36,6 +36,7 @@ header {
 
 .menu-img {
     width: 2rem;
+    visibility: hidden;
 }
 
 .logo {
@@ -46,6 +47,39 @@ header {
 .menu {
     grid-column: 11/12;
     grid-row: 3/6;
+}
+
+.close-icon {
+    width: 1.5em;
+}
+
+.side-menu-section {
+    position: absolute;
+    margin-left: 58%;
+    opacity: 0.7;
+}
+
+.side-menu {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1rem 1rem 1.5rem 16rem;
+    background-color: rgb(203, 224, 222);
+}
+
+.close-link {
+    grid-row: 2/3;
+    grid-column: 8/9;
+}
+
+.side-menu-list {
+    grid-row: 4/5;
+    grid-column: 1/9;
+}
+
+.side-menu-item {
+    font-weight: bold;
+    font-size: larger;
+    color: darkslategray;
 }
 
 /* Slide show styling */
@@ -69,12 +103,52 @@ header {
     font-size: larger;
 }
 
-.slides {
+.slide1 {
     grid-column: 1/12;
     grid-row: 2/4;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 4rem 4rem 4rem 4rem 4rem;
 }
 
 .slide-image1 {
     width: 20rem;
     border-radius: 8px;
+}
+
+.slide1-caption {
+    font-weight: bold;
+    color: white;
+    grid-row: 5/6;
+    background-color: gray;
+    opacity: 0.9;
+    height: 3rem;
+    text-align: center;
+}
+
+.caption-span {
+    color: rgb(203, 224, 222);
+}
+
+/* tablet-sized */
+@media screen and (min-width:768px) {
+    .header-nav {
+        background-color: green;
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+
+    .side-menu-section {
+        visibility: hidden;
+    }
+}
+
+/* desktop-sized */
+@media screen and (min-width: 900px){
+    .header-nav {
+        background-color: blue;
+    }
 }
