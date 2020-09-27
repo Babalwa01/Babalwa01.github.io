@@ -62,7 +62,7 @@ header {
 }
 
 .header-intro {
-    grid-column: 3/10;
+    grid-column: 3/12;
     grid-row: 1/2;
     color: darkslategray;
     font-weight: bold;
