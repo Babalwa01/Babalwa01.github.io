@@ -52,7 +52,7 @@ header {
 .slide-show {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 4rem 25rem 4rem 1rem;
+    grid-template-rows: 3rem 25rem 4rem 1rem;
 }
 
 .slide-background {
@@ -61,12 +61,19 @@ header {
     background-color: rgb(203, 224, 222);
 }
 
+.header-intro {
+    grid-column: 2/8;
+    color: darkslategray;
+    font-weight: bold;
+    font-size: larger;
+}
+
 .slides {
     grid-column: 1/12;
     grid-row: 2/4;
 }
 
-.slide-image {
+.slide-image1 {
     width: 20rem;
     border-radius: 8px;
 }
