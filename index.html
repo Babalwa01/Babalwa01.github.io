@@ -15,7 +15,14 @@
     <header>
         <nav class="header-nav">
             <a href="#" class="logo"><img src="IMAGES/logo.png" class="logo-img" alt="logo"></a>
-            <a href="" class="menu"><img src="IMAGES/menu.png" class="menu-img" alt="menu icon"></a>
+            <a href="" id="menu" onclick="toggleMenu()"><img src="IMAGES/menu.png" class="menu-img" alt="menu icon"></a>
+            <ul class="desktop-menu-list">
+                <a href="index.html"><li class="menu-item">Home</li></a>
+                <a href=""><li class="menu-item">About Me</li></a>
+                <a href=""><li class="menu-item">Skills</li></a>
+                <a href=""><li class="menu-item">Projects</li></a>
+                <a href=""><li class="menu-item">Contact</li></a>
+            </ul>
         </nav>
         <section class="slide-show">
             <aside class="slide-background"></aside>
@@ -28,9 +35,9 @@
                 </p>
             </figure>
         </section>
-        <section class="side-menu-section">
+        <section id="side-menu-section">
             <nav class="side-menu">
-                <a href="#" class="close-link"><img src="IMAGES/close.png" class="close-icon" alt="close icon"></a>
+                <a href="#" id="close-link"><img src="IMAGES/close.png" class="close-icon" alt="close icon"></a>
                 <ul class="side-menu-list">
                     <a href="#"><li class="side-menu-item">About Me</li></a><br>
                     <a href="#"><li class="side-menu-item">Skills</li></a><br>
@@ -44,5 +51,6 @@
     </main>
     <footer>
     </footer>
+    <script src="JAVASCRIPT/index.js"></script>
 </body>
 </html>

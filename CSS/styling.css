@@ -2,7 +2,6 @@ body {
     font-family: sans-serif;
     margin: 0;
     overflow-x: hidden;
-    
 }
 
 a {
@@ -36,7 +35,6 @@ header {
 
 .menu-img {
     width: 2rem;
-    visibility: hidden;
 }
 
 .logo {
@@ -44,19 +42,40 @@ header {
     grid-row: 2/6;
 }
 
-.menu {
+#menu {
     grid-column: 11/12;
     grid-row: 3/6;
+}
+
+.desktop-menu-list {
+   grid-column: 5/13;
+   grid-row: 3/4;
+
+   display: grid;
+   grid-template-columns: repeat(12, 6rem);
+   text-align: center;
+   visibility: hidden;
+}
+
+.menu-item {
+    font-weight: bold;
+    color: darkslategray;
+}
+
+.menu-item:hover {
+    border-bottom: 2px solid rgb(54, 145, 168);
 }
 
 .close-icon {
     width: 1.5em;
 }
 
-.side-menu-section {
+#side-menu-section {
     position: absolute;
     margin-left: 58%;
     opacity: 0.8;
+    transition: transform 0.5s ease-in;
+    display: none;
 }
 
 .side-menu {
@@ -66,7 +85,7 @@ header {
     background-color: rgb(203, 224, 222);
 }
 
-.close-link {
+#close-link {
     grid-row: 2/3;
     grid-column: 8/9;
 }
@@ -136,22 +155,23 @@ header {
 
 /* tablet-sized */
 @media screen and (min-width:768px) {
-    .header-nav {
-        background-color: green;
-    }
-
-    .menu {
-        visibility: hidden;
+    #menu {
+        display: none;
     }
 
     .side-menu-section {
-        visibility: hidden;
+        display: none;
+    }
+
+    .desktop-menu-list {
+        visibility: visible;
     }
 }
 
 /* desktop-sized */
 @media screen and (min-width: 900px){
-    .header-nav {
-        background-color: blue;
-    }
+    .desktop-menu-list {
+        grid-column: 6/13;
+        grid-template-columns: repeat(12, 8rem);
+     }
 }
