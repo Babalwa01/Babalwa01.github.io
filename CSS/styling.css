@@ -163,8 +163,8 @@ main {
     grid-row: 2/3;
 
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(20, minmax(2rem, auto));
+    grid-template-columns: repeat(12, 35vh);
+    grid-template-rows: repeat(5, minmax(0.5rem, auto));
 }
 
 .gray-font {
@@ -172,30 +172,53 @@ main {
 }
 
 .about-img {
-    width: 13rem;
+    width: 10.6rem;
+    height: 19.3rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgb(106, 164, 172);
 }
 
 .about1-fig {
     grid-column: 1/2;
+    grid-row: 3/4;
 }
 
 .about-info {
     grid-column: 2/13;
+    grid-row: 1/4;
 
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-}
-
-#welcome-h {
-    grid-column: 1/4;
+    grid-template-columns: repeat(12, 2.9vh);
+    grid-template-rows: 1rem 2rem 1rem 16rem 2rem;
 }
 
 #about-h {
     grid-column: 1/12;
+    grid-row: 1/2;
 }
 
-.history-p {
+#history-personality {
+    background-color: rgb(195, 204, 204);
     grid-column: 1/12;
+    grid-row: 4/6;
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 2.4vh);
+}
+
+#history-p {
+    grid-column: 2/13;
+    grid-row: 3/4;
+    color: honeydew;
+    font-style: italic;
+}
+
+#personality-p {
+    grid-column: 2/13;
+    grid-row: 5/6;
+    color: honeydew;
+    font-style: italic;
 }
 
 #skills-section {
@@ -273,7 +296,7 @@ footer {
     }
 
     .slide-image1 {
-        width: 27rem;
+        width: 24rem;
         height: 30rem;
     }
 }
