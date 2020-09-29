@@ -108,12 +108,12 @@ header {
 .slide-show {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 3rem 25rem 4rem 1rem;
+    grid-template-rows: 3rem 2rem 25rem 2rem 1rem;
 }
 
 .slide-background {
     grid-column: 8/13;
-    grid-row: 1/3;
+    grid-row: 1/5;
     background-color: rgb(203, 224, 222);
 }
 
@@ -153,6 +153,73 @@ header {
     color: rgb(203, 224, 222);
 }
 
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, minmax(3rem, auto));
+}
+
+#about-section {
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, minmax(2rem, auto));
+}
+
+.gray-font {
+    color: darkslategray;
+}
+
+.about-img {
+    width: 13rem;
+}
+
+.about1-fig {
+    grid-column: 1/2;
+}
+
+.about-info {
+    grid-column: 2/13;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#welcome-h {
+    grid-column: 1/4;
+}
+
+#about-h {
+    grid-column: 1/12;
+}
+
+.history-p {
+    grid-column: 1/12;
+}
+
+#skills-section {
+    background-color: red;
+    grid-row: 3/4;
+}
+
+#projects-section {
+    background-color: orange;
+    grid-row: 4/5;
+}
+
+#contact-section {
+    background-color: yellow;
+    grid-row: 5/6;
+}
+
+footer {
+    background-color: green;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, minmax(3rem, auto));
+}
+
 /* tablet-sized */
 @media screen and (min-width:768px) {
     #menu {
@@ -166,6 +233,28 @@ header {
     .desktop-menu-list {
         visibility: visible;
     }
+
+    .header-intro {
+        grid-column: 4/12;
+        grid-row: 1/2;
+        font-size: xx-large;
+    }
+
+    .slide1 {
+        grid-column: 3/12;
+        grid-row: 3/4;
+    }
+
+    .slide-image1 {
+        width: 28rem;
+        height: 30rem;
+    }
+
+    .slide1-caption {
+        grid-row: 6/7;
+        height: 4rem;
+        font-size: larger;
+    }
 }
 
 /* desktop-sized */
@@ -173,5 +262,18 @@ header {
     .desktop-menu-list {
         grid-column: 6/13;
         grid-template-columns: repeat(12, 8rem);
-     }
+    }
+
+    .header-intro {
+        grid-column: 3/12;
+    }
+
+    .slide1 {
+        grid-column: 5/12;
+    }
+
+    .slide-image1 {
+        width: 27rem;
+        height: 30rem;
+    }
 }
