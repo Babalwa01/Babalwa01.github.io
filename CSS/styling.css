@@ -63,8 +63,8 @@ header {
     animation-iteration-count: infinite;
 }
 
-#coder-fig {
-    grid-column: 2/10;
+.coder-fig {
+    grid-column: 2/12;
     grid-row: 4/6;
     
 }
