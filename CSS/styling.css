@@ -51,12 +51,12 @@ header {
 }
 
 #intro-code {
-    grid-column: 5/10;
+    grid-column: 4/10;
     grid-row: 3/4;
 }
 
 #code-img {
-    width: 19rem;
+    width: 18rem;
     border-radius: 5px;
     box-shadow: 0 0 0.8rem 0 black;
     animation: zoom_in_out 10s forwards;
@@ -66,6 +66,7 @@ header {
 #coder-fig {
     grid-column: 2/10;
     grid-row: 4/6;
+    
 }
 
 #code-p {
