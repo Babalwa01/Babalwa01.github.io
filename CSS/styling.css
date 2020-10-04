@@ -1,10 +1,341 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: url('../IMAGES/background.jpg') no-repeat center fixed;
-    background-size: cover;
+    width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Desktop-sized screen */
+@media screen and (min-width: 900px){
+
+    header {
+        width: 100%;
+        background: url('../IMAGES/background_i.jpg') no-repeat center fixed;
+    }
+
+    .header-nav {
+        width: 100%;
+        height: 11vh;
+        box-shadow: 0 0 0.5rem 0 black;
+    }
+
+    .intro-sec {
+        width: 100%;
+        height: 89vh;
+    }
+
+    .about-sec {
+        display: grid;
+        grid-template-rows: repeat(10, minmax(10vh, auto));
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .skills-sec {
+        background-color: rgb(247, 247, 247);
+        display: grid;
+        grid-template-rows: repeat(10, minmax(10vh, auto));
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .projects-sec {
+        display: grid;
+        grid-template-rows: repeat(10, minmax(10vh, auto));
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .blog-section {
+        font-family: sans-serif;
+        background-color: rgb(247, 247, 247);
+        display: grid;
+        grid-template-rows: repeat(13, minmax(5vh, auto));
+        grid-template-columns: repeat(20, 5%);
+        text-align: center;
+    }
+
+    .blog-section h5 {
+        grid-column: 9/13;
+        grid-row: 3/4;
+    }
+
+    .blog-section h1 {
+        grid-column: 8/14;
+        grid-row: 4/5;
+    }
+
+    .blog-section .blog-p {
+        grid-column: 4/18;
+        grid-row: 6/7;
+        color: gray;
+    }
+
+    .blog-section h3 {
+        font-weight: lighter;
+    }
+
+    .blog-img1 {
+        grid-column: 3/7;
+        grid-row: 8/9;
+        width: 21rem;
+        height: 22rem;
+        text-align: center;
+    }
+
+    .blog1-h {
+        grid-column: 3/8;
+        grid-row: 10/11;
+    }
+
+    .blog1-p {
+        grid-column: 3/8;
+        grid-row: 12/13;
+        color: gray;
+        text-align: center;
+    }
+
+    .blog-img2 {
+        grid-column: 9/13;
+        grid-row: 8/9;
+        width: 21rem;
+        height: 22rem;
+        text-align: center;
+    }
+
+    .blog2-h {
+        grid-column: 9/14;
+        grid-row: 10/11;
+    }
+
+    .blog2-p {
+        grid-column: 9/14;
+        grid-row: 12/13;
+        color: gray;
+        text-align: center;
+    }
+
+    .blog-img3 {
+        grid-column: 15/19;
+        grid-row: 8/9;
+        width: 20rem;
+        height: 22rem;
+        text-align: center;
+    }
+
+    .blog3-h {
+        grid-column: 15/20;
+        grid-row: 10/11;
+    }
+
+    .blog3-p {
+        grid-column: 15/20;
+        grid-row: 12/13;
+        color: gray;
+        text-align: center;
+    }
+
+    .contact-sec {
+        display: grid;
+        grid-template-rows: repeat(23, minmax(5vh, auto));
+        grid-template-columns: repeat(12, 1fr);
+        font-family: sans-serif;
+        text-align: center
+    }
+
+    .contact-sec h5 {
+        grid-row: 3/4;
+        grid-column: 6/8;
+    }
+
+    .contact-sec h1 {
+        grid-row: 4/5;
+        grid-column: 5/9;
+    }
+
+    .contact-sec p {
+        grid-row: 6/7;
+        grid-column: 4/10;
+    }
+
+    .contact-sec .pic-form {
+        grid-row: 8/24;
+        grid-column: 2/12;
+        background-color: rgb(245, 241, 245);
+
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+
+    }
+
+    .pic-form img {
+        width: 35rem;
+    }
+
+    .pic-form .form-container {
+        background-color: violet;
+        display: grid;
+        grid-template-columns: repeat(10, 10%);
+    }
+
+    .contact-form {
+        margin-top: 3rem;
+    }
+
+    .contact-form input {
+        width: 28rem;
+        height: 3rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+    }
+    .contact-form #message-area {
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        padding-left: 1.1rem;
+    }
+
+    .contact-form button {
+        height: 3rem;
+        width: 14rem;
+        margin-right: 14rem;
+        border-radius: 5px;
+        background-color: rgb(204, 185, 147);
+        color: white;
+        cursor: pointer;
+    }
+
+    .contact-form button:hover {
+        background-color: gray;
+    }
+
+    .gray-font {
+        color: gray;
+    }
+
+    footer {
+        text-align: left;
+        display: grid;
+        grid-template-rows: repeat(7, minmax(10vh, auto));
+        grid-template-columns: repeat(12, 8.3%);
+        /* background: url('../IMAGES/background_i.jpg') no-repeat center fixed; */
+        background-color: rgb(204, 185, 147);
+    }
+
+    footer h2 {
+        color: white;
+    }
+
+    footer p {
+        color: white;
+    }
+
+    .connect-h {
+        grid-row: 2/3;
+        grid-column: 2/4;
+    }
+
+    .connect-p {
+        grid-row: 3/4;
+        grid-column: 2/4;
+        font-size: larger;
+        color: rgb(241, 237, 226);
+    }
+
+    .connect-p:hover {
+        color: white;
+    }
+
+    .links-h {
+        grid-row: 2/3;
+        grid-column: 5/6;
+    }
+
+    .menu-links {
+        grid-column: 5/6;
+        grid-row: 3/4;
+    }
+
+    .menu-links a p {
+        font-size: larger;
+        color: rgb(241, 237, 226);
+    }
+
+    .menu-links a p:hover {
+        color: white;
+    }
+
+    .services-h {
+        grid-row: 2/5;
+        grid-column: 7/9;
+    }
+
+    .services-links {
+        grid-row: 3/4;
+        grid-column: 7/9;
+    }
+
+    .services-links a p {
+        font-size: larger;
+        color: rgb(241, 237, 226);
+    }
+
+    .services-links a p:hover {
+        color: white;
+    }
+
+    .enquiries-h {
+        grid-row: 2/5;
+        grid-column: 10/12;
+    }
+
+    .enquiries-sec {
+        grid-row: 3/4;
+        grid-column: 10/12;
+
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: repeat(3, minmax(5vh, auto));
+        text-align: left;
+    }
+
+    #mail-link {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .social-media-nav {
+        grid-row: 5/6;
+        grid-column: 6/8;
+        text-align: center;
+    }
+
+    .media-icon {
+        width: 3rem;
+    }
+
+    .copyright-p {
+        grid-row: 7/8;
+        grid-column: 4/10;
+        text-align: center;
+    }
+}
+
+/* body {
     font-family: sans-serif;
     margin: 0;
     overflow-x: hidden;
     width: 100%;
+    text-align: center;
 }
 
 a {
@@ -20,9 +351,13 @@ ul {
 }
 
 header {
+    width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(2, minmax(3rem, auto));
+    grid-template-rows: repeat(4, minmax(3rem, auto));
+    background: url('../IMAGES/background_i.jpg') no-repeat center fixed;
+    background-size: cover;
+    box-shadow: 0 0 0.5rem 0 black;
 }
 
 .header-nav {
@@ -35,7 +370,7 @@ header {
 #header-intro {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, minmax(0.5rem, auto));
+    grid-template-rows: repeat(9, minmax(0.5rem, auto));
 }
 
 @keyframes zoom_in_out {
@@ -66,7 +401,7 @@ header {
 .coder-fig {
     grid-column: 2/12;
     grid-row: 4/6;
-    
+    text-align: center;
 }
 
 #code-p {
@@ -87,7 +422,7 @@ header {
 }
 
 .logo {
-    grid-column: 2/3;
+    grid-column: 4/5;
     grid-row: 2/6;
 }
 
@@ -97,18 +432,17 @@ header {
 }
 
 .desktop-menu-list {
-   grid-column: 5/13;
+   grid-column: 6/13;
    grid-row: 3/4;
 
-   display: grid;
-   grid-template-columns: repeat(12, 6rem);
-   text-align: center;
+   display: flex;
    visibility: hidden;
 }
 
 .menu-item {
     font-weight: bold;
-    color: rgb(227, 233, 146);
+    color: white;
+    margin-right: ;
 }
 
 .menu-item:hover {
@@ -153,7 +487,7 @@ header {
 }
 
 .intro-p-container {
-    grid-row: 7/9;
+    grid-row: 10/11;
     grid-column: 2/12;
     background-color: khaki;
     opacity: 0.8;
@@ -172,8 +506,19 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, minmax(3rem, auto));
+}
+
+#about-section {
+    grid-row: 2/3;
+    grid-column: 2/11;
+}
+
+#about-pic1 {
+    width: 17rem;
+    border-radius: 8px;
+    box-shadow: 0 0 0.9rem 0 black;
 }
 
 #skills-section {
@@ -198,7 +543,6 @@ footer {
     grid-template-rows: repeat(4, minmax(3rem, auto));
 }
 
-/* tablet-sized */
 @media screen and (min-width:768px) {
     #menu {
         display: none;
@@ -213,14 +557,6 @@ footer {
     }
 }
 
-/* desktop-sized */
 @media screen and (min-width: 900px){
-    .desktop-menu-list {
-        grid-column: 6/13;
-        grid-template-columns: repeat(12, 8rem);
-    }
-
-    .menu-item {
-        color: rgb(63, 65, 34);
-    }
-}
+    
+} */
