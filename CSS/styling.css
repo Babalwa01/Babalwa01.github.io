@@ -74,6 +74,8 @@ meter::-webkit-meter-optimum-value {
         display: grid;
         grid-template-rows: repeat(16, minmax(4vh, auto));
         grid-template-columns: repeat(20, 5%);
+
+        text-align: center;
     }
 
     .intro-sec h4 {
@@ -94,13 +96,101 @@ meter::-webkit-meter-optimum-value {
     }
 
     .intro-sec-btn {
-        width: 12rem;
+        width: 11rem;
         height: 2.5rem;
         background-color: transparent;
         font-weight: bolder;
         color: white;
         border-radius: 5px;
         cursor: pointer;
+    }
+
+    #about-sec {
+        width: 100%;
+        text-align: center;
+        display: grid;
+        grid-template-rows: repeat(56, minmax(4vh, auto));
+        grid-template-columns: repeat(20, 5%);
+        font-family: sans-serif;
+    }
+
+    .umuzi-img {
+        width: 19rem;
+    }
+
+    .bdcc-img {
+        width: 15rem;
+    }
+
+    #about-sec .welcome-h {
+        grid-row: 3/4;
+        grid-column: 9/13;
+    }
+
+    #about-sec .about-h {
+        grid-column: 8/14;
+        grid-row: 4/5;
+    }
+
+    #about-sec .about-pic-sec {
+        grid-column: 5/17;
+        grid-row: 6/22;
+        background: url('../IMAGES/about.png') no-repeat center;
+        background-size: cover;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+        border-radius: 5px;
+    }
+
+    #about-sec .background-p {
+        grid-column: 4/18;
+        grid-row: 23/24;
+        font-weight: bolder;
+    }
+
+    .current-h {
+        grid-column: 7/15;
+        grid-row: 26/27;
+    }
+
+    .umuzi-sec {
+        grid-column: 4/18;
+        grid-row: 28/41;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+    }
+
+    .umuzi-sec h4 {
+        margin-top: 3rem;
+    }
+
+    .umuzi-img {
+        margin-top: 1.5rem;
+        width: 12rem;
+        border-radius: 5px;
+    }
+
+    .bayathandwa-sec {
+        grid-column: 4/18;
+        grid-row: 43/56;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+    }
+
+    .bayathandwa-sec h4 {
+        margin-top: 3rem;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .bdcc-img {
+        margin-top: 15%;
+    }
+
+    #skills-sec {
+        background-color: rgb(247, 247, 247);
+        display: grid;
+        grid-template-rows: repeat(48, minmax(5vh, auto));
+        grid-template-columns: repeat(20, 5%);
+        font-family: sans-serif;
+        width: 100%;
     }
 }
 
