@@ -27,18 +27,77 @@ meter::-webkit-meter-optimum-value {
 
     header {
         width: 100%;
-        background: url('../IMAGES/background_i.jpg') no-repeat center fixed;
+        background: url('../IMAGES/programmer2.jpg') no-repeat center fixed;
+        background-size: cover;
+        font-family: sans-serif;
     }
 
     .header-nav {
         width: 100%;
         height: 11vh;
         box-shadow: 0 0 0.5rem 0 black;
+        display: grid;
+        grid-template-columns: repeat(12, 8.33%);
+    }
+
+    #logo {
+        width: 3rem; 
+    }
+
+    .logo-link {
+        grid-column: 4/5;
+        margin-top: 6%;
+    }
+
+    .desktop-menu {
+        grid-column: 6/12;
+        display: inline-flex;
+        margin-top: 5%;
+    }
+
+    .desktop-menu a{
+        margin-right: 3rem;
+    }
+
+    .menu-item {
+        font-size: larger;
+        color: rgb(236, 227, 227);
+        margin-bottom: 2%;
+    }
+
+    .menu-item:hover {
+        border-bottom: 2px solid black;
+        color: white;
     }
 
     .intro-sec {
         width: 100%;
         height: 89vh;
+        text-align: center;
+    }
+
+    .intro-sec h4 {
+        color: rgb(236, 227, 227);
+        margin-top: 5%;
+    }
+
+    .intro-sec h1 {
+        color: rgb(236, 227, 227);
+        margin-top: 2%;
+    }
+    .intro-sec a {
+        margin-top: 2%;
+    }
+
+    .intro-sec-btn {
+        color: rgb(236, 227, 227);
+        background-color: transparent;
+        width: 15%;
+        height: 2.5rem;
+        border-radius: 5px;
+        margin-top: 2%;
+        cursor: pointer;
+        font-weight: bold;
     }
 
     #about-sec {
@@ -552,7 +611,7 @@ meter::-webkit-meter-optimum-value {
         background-color: rgb(78, 206, 178);
     }
 
-    .blog-section {
+    #blog-section {
         font-family: sans-serif;
         background-color: rgb(247, 247, 247);
         display: grid;
@@ -561,23 +620,23 @@ meter::-webkit-meter-optimum-value {
         text-align: center;
     }
 
-    .blog-section h5 {
+    #blog-section h5 {
         grid-column: 9/13;
         grid-row: 3/4;
     }
 
-    .blog-section h1 {
+    #blog-section h1 {
         grid-column: 8/14;
         grid-row: 4/5;
     }
 
-    .blog-section .blog-p {
+    #blog-section .blog-p {
         grid-column: 4/18;
         grid-row: 6/7;
         color: gray;
     }
 
-    .blog-section h3 {
+    #blog-section h3 {
         font-weight: lighter;
     }
 
