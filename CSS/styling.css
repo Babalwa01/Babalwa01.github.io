@@ -41,10 +41,87 @@ meter::-webkit-meter-optimum-value {
         height: 89vh;
     }
 
-    .about-sec {
+    #about-sec {
+        font-family: sans-serif;
         display: grid;
-        grid-template-rows: repeat(10, minmax(10vh, auto));
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(25, minmax(5vh, auto));
+        grid-template-columns: repeat(20, 5%);
+    }
+
+    .about-pic-sec {
+        grid-column: 3/10;
+        grid-row: 4/20;
+        background: url('../IMAGES/about.png') no-repeat center;
+        background-size: cover;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+    }
+
+    .welcome-h {
+        grid-column: 11/12;
+        grid-row: 4/5;
+    }
+
+    .about-h {
+        text-align: left;
+        grid-column: 11/14;
+        grid-row: 5/6;
+    }
+
+    .background-p {
+        text-align: left;
+        grid-column: 11/20;
+        grid-row: 7/8;
+        color: gray;
+        font-size: larger;
+    }
+
+    .current-h {
+        text-align: left;
+        grid-column: 11/14;
+        grid-row: 9/10;
+    }
+
+    .umuzi-sec {
+        grid-column: 11/15;
+        grid-row: 11/20;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+        text-align: center;
+    }
+
+    .umuzi-sec h4 {
+        margin-top: 7%;
+        margin-left: 5%;
+        margin-right: 5%;
+        color: rgb(97, 93, 93);
+    }
+
+    .bayathandwa-sec {
+        grid-column: 16/20;
+        grid-row: 11/20;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+        text-align: center;
+    }
+
+    .bayathandwa-sec h4 {
+        margin-top: 7%;
+        margin-left: 5%;
+        margin-right: 5%;
+        color: rgb(97, 93, 93);
+    }
+
+    .umuzi-img {
+        width: 11rem;
+        margin-top: 10%;
+        border-radius: 5px;
+    }
+
+    .umuzi-link {
+        margin-top: 10%;
+    }
+
+    .bdcc-img {
+        width: 16rem;
+        margin-top: 10%;
     }
 
     #skills-sec {
