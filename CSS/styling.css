@@ -17,6 +17,11 @@ ul {
     list-style-type: none;
 }
 
+meter::-webkit-meter-optimum-value {
+    background: none;
+    background-color: rgb(204, 185, 147);
+}
+
 /* Desktop-sized screen */
 @media screen and (min-width: 900px){
 
@@ -42,27 +47,287 @@ ul {
         grid-template-columns: repeat(12, 1fr);
     }
 
-    .skills-sec {
+    #skills-sec {
         background-color: rgb(247, 247, 247);
         display: grid;
-        grid-template-rows: repeat(10, minmax(10vh, auto));
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(48, minmax(5vh, auto));
+        grid-template-columns: repeat(20, 5%);
+        font-family: sans-serif;
+        width: 100%;
     }
 
-    .projects-sec {
+    #skills-sec .skills-h {
+        text-align: center;
+        grid-column: 9/13;
+        grid-row: 3/4;
+    }
+
+    #skills-sec .myskills-h {
+        text-align: center;
+        grid-column: 8/14;
+        grid-row: 4/5;
+    }
+
+    .skills-p {
+        text-align: center;
+        grid-row: 6/7;
+        grid-column: 6/16;
+        color: gray;
+    }
+
+    #skills-sec meter {
+        width: 30rem;
+        height: 3rem;
+    }
+
+    .html-h3 {
+        grid-column: 3/4;
+        grid-row: 8/9;
+    }
+
+    .html-percent {
+        grid-column: 7/8;
+        grid-row: 8/9;
+    }
+
+    #html-meter {
+        grid-column: 3/4;
+        grid-row: 9/10;
+    }
+
+    .css-h3 {
+        grid-column: 12/13;
+        grid-row: 8/9;
+    }
+
+    .css-percent {
+        grid-row: 8/9;
+        grid-column: 16/17;
+    }
+
+    #css-meter {
+        grid-row: 9/10;
+        grid-column: 12/13;
+    }
+
+    .javascript-h3 {
+        grid-column: 3/4;
+        grid-row: 11/12;
+    }
+
+    .javascript-percent {
+        grid-column: 7/8;
+        grid-row: 11/12;
+    }
+
+    #javascript-meter {
+        grid-column: 3/4;
+        grid-row: 12/13;
+    }
+
+    .sql-h3 {
+        grid-column: 12/13;
+        grid-row: 11/12;
+    }
+
+    .sql-percent {
+        grid-column: 15/17;
+        grid-row: 11/12;
+    }
+
+    #sql-meter {
+        grid-column: 12/13;
+        grid-row: 12/13;
+    }
+
+    .c-h3 {
+        grid-column: 3/4;
+        grid-row: 14/15;
+        text-align: left;
+    }
+
+    .c-percent {
+        grid-column: 6/8;
+        grid-row: 14/15;
+    }
+
+    #c-meter {
+        grid-column: 3/4;
+        grid-row: 15/16;
+    }
+
+    .java-h3 {
+        grid-column: 12/13;
+        grid-row: 14/15;
+    }
+
+    .java-percent {
+        grid-column: 14/17;
+        grid-row: 14/15;
+    }
+
+    #java-meter {
+        grid-column: 12/13;
+        grid-row: 15/16;
+    }
+
+    .linux-h3 {
+        grid-column: 3/5;
+        grid-row: 17/18;
+    }
+
+    .linux-percent {
+        grid-column: 7/8;
+        grid-row: 17/18;
+    }
+
+    #linux-meter {
+        grid-column: 3/4;
+        grid-row: 18/19;
+    }
+
+    .git-h3 {
+        grid-column: 12/14;
+        grid-row: 17/18;
+        text-align: left;
+    }
+
+    .git-percent {
+        grid-column: 16/17;
+        grid-row: 17/18;
+    }
+
+    #git-meter {
+        grid-column: 12/13;
+        grid-row: 18/19;
+    }
+
+    .do-h {
+        text-align: center;
+        grid-column: 9/13;
+        grid-row: 22/23;
+    }
+
+    .learn-h {
+        text-align: center;
+        grid-column: 7/15;
+        grid-row: 23/24;
+    }
+
+    .do-p {
+        text-align: center;
+        color: gray;
+        grid-column: 5/17;
+        grid-row: 25/26;
+    }
+
+    .courses-sec {
+        grid-row: 27/36;
+        grid-column: 3/7;
+        background-color: white;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+    }
+
+    .courses-sec img {
+        width: 2.5rem;
+        margin-top: 1.2rem;
+    }
+
+    .courses-sec h5 {
+        margin-top: 1rem;
+    }
+
+    .courses-sec p {
+        margin-top: 2rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+    .challenges-sec {
+        grid-row: 27/36;
+        grid-column: 9/13;
+        background-color: white;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+    }
+
+    .challenges-sec img {
+        width: 2.5rem;
+        margin-top: 1.2rem;
+    }
+
+    .challenges-sec h5 {
+        margin-top: 1rem;
+    }
+
+    .challenges-sec p {
+        margin-top: 2rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+    .teach-sec {
+        grid-row: 27/36;
+        grid-column: 15/19;
+        background-color: white;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+    }
+
+    .teach-sec img {
+        width: 2.5rem;
+        margin-top: 1.2rem;
+    }
+
+    .teach-sec h5 {
+        margin-top: 1rem;
+    }
+
+    .teach-sec p {
+        margin-top: 2rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+    .available-sec {
+        grid-row: 40/49;
+        grid-column: 1/21;
+        background-color: rgb(204, 185, 147);
+        padding-top: 7%;
+    }
+
+    .available-h {
+        font-size: xx-large;
+        color: white;
+    }
+
+    .contact-btn {
+        margin-top: 2%;
+        width: 20%;
+        height: 20%;
+        font-size: larger;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .contact-btn:hover {
+        background-color: gray;
+    }
+
+    #projects-sec {
         display: grid;
         grid-template-rows: repeat(36, minmax(5vh, auto));
         grid-template-columns: repeat(20, 5%);
         font-family: sans-serif;
     }
 
-    .projects-sec h5 {
+    #projects-sec h5 {
         text-align: center;
         grid-column: 9/13;
         grid-row: 3/4;
     }
 
-    .projects-sec h1 {
+    #projects-sec h1 {
         text-align: center;
         grid-column: 8/14;
         grid-row: 4/5;
@@ -299,7 +564,7 @@ ul {
         text-align: center;
     }
 
-    .contact-sec {
+    #contact-sec {
         display: grid;
         grid-template-rows: repeat(23, minmax(5vh, auto));
         grid-template-columns: repeat(12, 1fr);
@@ -307,22 +572,22 @@ ul {
         text-align: center
     }
 
-    .contact-sec h5 {
+    #contact-sec h5 {
         grid-row: 3/4;
         grid-column: 6/8;
     }
 
-    .contact-sec h1 {
+    #contact-sec h1 {
         grid-row: 4/5;
         grid-column: 5/9;
     }
 
-    .contact-sec p {
+    #contact-sec p {
         grid-row: 6/7;
         grid-column: 4/10;
     }
 
-    .contact-sec .pic-form {
+    #contact-sec .pic-form {
         grid-row: 8/24;
         grid-column: 2/12;
         background-color: rgb(245, 241, 245);
