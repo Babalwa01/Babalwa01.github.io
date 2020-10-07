@@ -187,10 +187,276 @@ meter::-webkit-meter-optimum-value {
     #skills-sec {
         background-color: rgb(247, 247, 247);
         display: grid;
-        grid-template-rows: repeat(48, minmax(5vh, auto));
+        grid-template-rows: repeat(72, minmax(5vh, auto));
         grid-template-columns: repeat(20, 5%);
         font-family: sans-serif;
         width: 100%;
+        text-align: center;
+    }
+
+    .skills-h {
+        grid-column: 10/12;
+        grid-row: 3/4;
+    }
+
+    .myskills-h {
+        grid-column: 8/14;
+        grid-row: 4/5;
+    }
+
+    .skills-p {
+        grid-column: 3/19;
+        grid-row: 6/7;
+    }
+
+    .html-h3 {
+        grid-row: 8/9;
+        grid-column: 3/8;
+    }
+
+     .html-percent {
+        grid-row: 8/9;
+        grid-column: 12/13;
+    }
+
+    #html-meter {
+        grid-row: 9/10;
+        grid-column: 4/18;
+        width: 100%;
+        height: 1.5rem;
+    }
+
+    .css-h3 {
+        grid-row: 11/12;
+        grid-column: 3/7;
+    }
+
+    .css-percent {
+        grid-row: 11/12;
+        grid-column: 12/13;
+    }
+
+    #css-meter {
+        grid-row: 12/13;
+        grid-column: 4/18;
+        width: 100%;
+        height: 1.5rem;
+    }
+
+    .javascript-h3 {
+        grid-row: 14/15;
+        grid-column: 4/8;
+    }
+
+    .javascript-percent {
+        grid-row: 14/15;
+        grid-column: 12/13;
+    }
+
+    #javascript-meter {
+        grid-row: 15/16;
+        grid-column: 4/18;
+        width: 100%;
+        height: 1.5rem;
+    }
+
+    .sql-h3 {
+        grid-row: 17/18;
+        grid-column: 3/7;
+    }
+
+    .sql-percent {
+        grid-row: 17/18;
+        grid-column: 11/12;
+    }
+
+    #sql-meter {
+        grid-row: 18/19;
+        grid-column: 4/18;
+        width: 100%;
+        height: 1.5rem;
+    }
+
+    .c-h3 {
+        grid-row: 20/21;
+        grid-column: 3/6;
+    }
+
+    .c-percent {
+        grid-row: 20/21;
+        grid-column: 11/12;
+    }
+    
+    #c-meter {
+        grid-row: 21/22;
+        grid-column: 4/18;
+        width: 100%;
+        height: 1.5rem;
+    }
+
+    .java-h3 {
+        grid-row: 23/24;
+        grid-column: 3/7;
+    }
+
+    .java-percent {
+        grid-row: 23/24;
+        grid-column: 10/12;
+    }
+
+    #java-meter {
+        grid-row: 24/25;
+        grid-column: 4/18;
+        width: 100%;
+        height: 1.5rem;
+    }
+
+    .linux-h3 {
+        grid-row: 26/27;
+        grid-column: 4/9;
+    }
+
+    .linux-percent {
+        grid-row: 26/27;
+        grid-column: 12/13;
+    }
+
+    #linux-meter {
+        grid-row: 27/28;
+        grid-column: 4/18;
+        width: 100%;
+        height: 1.5rem;
+    }
+
+    .git-h3 {
+        grid-row: 29/30;
+        grid-column: 4/9;
+    }
+
+    .git-percent {
+        grid-row: 29/30;
+        grid-column: 12/13;
+    }
+
+    #git-meter {
+        grid-row: 30/31;
+        grid-column: 4/18;
+        width: 100%;
+        height: 1.5rem;
+    }
+
+    .do-h {
+        grid-row: 32/33;
+        grid-column: 9/13;
+    }
+
+    .learn-h {
+        grid-row: 33/34;
+        grid-column: 3/19;
+    }
+
+    .do-p {
+        grid-row: 35/36;
+        grid-column: 3/19;
+        color: gray;
+    }
+
+    .courses-sec {
+        grid-row: 37/46;
+        grid-column: 5/17;
+        background-color: white;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+        text-align: center;
+    }
+
+    .courses-sec img {
+        width: 2.5rem;
+        margin-top: 1.9rem;
+    }
+
+    .courses-sec h5 {
+        margin-top: 1rem;
+    }
+
+    .courses-sec p {
+        margin-top: 2rem;
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+    }
+
+    .challenges-sec {
+        grid-row: 47/56;
+        grid-column: 5/17;
+        background-color: white;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+        text-align: center;
+    }
+
+    .challenges-sec img {
+        width: 2.5rem;
+        margin-top: 1.9rem;
+    }
+
+    .challenges-sec h5 {
+        margin-top: 1rem;
+    }
+
+    .challenges-sec p {
+        margin-top: 2rem;
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+    }
+
+    .teach-sec {
+        grid-row: 57/66;
+        grid-column: 5/17;
+        background-color: white;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+        text-align: center;
+    }
+
+    .teach-sec img {
+        width: 2.5rem;
+        margin-top: 1.9rem;
+    }
+
+    .teach-sec h5 {
+        margin-top: 1rem;
+    }
+
+    .teach-sec p {
+        margin-top: 1.6rem;
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+    }
+
+    .available-sec {
+        grid-row: 67/73;
+        grid-column: 1/21;
+        background-color: rgb(204, 185, 147);
+    }
+
+    .available-h {
+        font-size: large;
+        color: white;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .contact-btn {
+        margin-top: 1rem;
+        width: 40%;
+        height: 20%;
+        font-size: larger;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .contact-btn:hover {
+        background-color: gray;
     }
 }
 
