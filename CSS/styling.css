@@ -37,13 +37,13 @@ meter::-webkit-meter-optimum-value {
     }
 
     #logo {
-        width: 3rem;
+        width: 10%;
         margin-top: 3%;
         margin-right: 50%;
     }
 
     .menu-img {
-        width: 2.5rem;
+        width: 10%;
     }
 
     .header-nav {
@@ -96,8 +96,8 @@ meter::-webkit-meter-optimum-value {
     }
 
     .intro-sec-btn {
-        width: 11rem;
-        height: 2.5rem;
+        width: 35vw;
+        height: 6vh;
         background-color: transparent;
         font-weight: bolder;
         color: white;
