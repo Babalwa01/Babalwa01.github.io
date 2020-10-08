@@ -48,7 +48,7 @@ meter::-webkit-meter-optimum-value {
 
     .header-nav {
         box-shadow: 0 0 0.5rem 0 black;
-        height: 4.5rem;
+        height: 11vh;
     }
 
     .menu-link {
@@ -458,6 +458,178 @@ meter::-webkit-meter-optimum-value {
     .contact-btn:hover {
         background-color: gray;
     }
+
+    #projects-sec {
+        display: grid;
+        grid-template-rows: repeat(58, minmax(5vh, auto));
+        grid-template-columns: repeat(20, 5%);
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    #projects-sec h5 {
+        grid-row: 3/4;
+        grid-column: 8/14;
+    }
+
+    #projects-sec h1 {
+        grid-row: 4/5;
+        grid-column: 8/14;
+    }
+
+    .projects-p {
+        grid-row: 6/7;
+        grid-column: 3/19;
+        color: gray;
+        text-align: center;
+    }
+
+    .website-project {
+        grid-column: 5/17;
+        grid-row: 8/17;
+        background: url('../IMAGES/website_pro.jpg') no-repeat center;
+        background-size: cover;
+        cursor: pointer;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+    }
+
+    #web-sec {
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+    }
+
+    #web-sec h2 {
+        color: white;
+        padding-top: 30%;
+    }
+
+    #web-sec p {
+        color: white;
+        margin-top: 3%;
+    }
+
+    #web-sec:hover {
+        background-color: rgb(177, 170, 166);
+    }
+
+    .zintu-project {
+        grid-column: 5/17;
+        grid-row: 18/27;
+        background: url('../IMAGES/zintu-pro.jpg') no-repeat center;
+        background-size: contain;
+        cursor: pointer;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+    }
+
+    #zintu-sec {
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+    }
+
+    #zintu-sec h2 {
+        color: white;
+        padding-top: 30%;
+    }
+
+    #zintu-sec p {
+        color: white;
+        margin-top: 3%;
+    }
+
+    #zintu-sec:hover {
+        background-color: rgb(105, 109, 156);
+    }
+
+    .bayathandwa-project {
+        grid-column: 5/17;
+        grid-row: 28/37;
+        background: url('../IMAGES/bayathandwa_pro.jpg') no-repeat center;
+        background-size: contain;
+        cursor: pointer;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+    }
+
+    #bayathandwa-sec {
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+    }
+
+    #bayathandwa-sec h2 {
+        color: white;
+        padding-top: 30%;
+    }
+
+    #bayathandwa-sec p {
+        color: white;
+        margin-top: 3%;
+    }
+
+    #bayathandwa-sec:hover {
+        background-color: rgb(206, 78, 189);
+    }
+
+    .health-project {
+        grid-column: 5/17;
+        grid-row: 38/47;
+        background: url('../IMAGES/diet_pro.jpg') no-repeat center;
+        background-size: cover;
+        cursor: pointer;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+    }
+
+    #health-sec {
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+    }
+
+    #health-sec h2 {
+        color: white;
+        padding-top: 30%;
+    }
+
+    #health-sec p {
+        color: white;
+        margin-top: 3%;
+    }
+
+    #health-sec:hover {
+        background-color: rgb(78, 206, 106);
+    }
+
+    .kiddies-project {
+        grid-column: 5/17;
+        grid-row: 48/57;
+        background: url('../IMAGES/kiddies.png') no-repeat center;
+        background-size: contain;
+        cursor: pointer;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
+    }
+
+    #kiddies-sec {
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+
+    }
+
+    #kiddies-sec h2 {
+        color: rgb(128, 0, 85);
+        padding-top: 8%;
+    }
+
+    #kiddies-sec p {
+        color: rgb(128, 0, 85);
+        margin-top: 3%;
+    }
+
+    #kiddies-sec:hover {
+        background-color: rgb(78, 206, 178);
+    }
+
 }
 
 /* Desktop-sized screen */
@@ -936,6 +1108,7 @@ meter::-webkit-meter-optimum-value {
         background: url('../IMAGES/website_pro.jpg') no-repeat center;
         background-size: cover;
         cursor: pointer;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
     }
 
     #web-sec {
@@ -963,6 +1136,7 @@ meter::-webkit-meter-optimum-value {
         background: url('../IMAGES/zintu-pro.jpg') no-repeat center;
         background-size: contain;
         cursor: pointer;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
     }
 
     #zintu-sec {
@@ -990,6 +1164,7 @@ meter::-webkit-meter-optimum-value {
         background: url('../IMAGES/bayathandwa_pro.jpg') no-repeat center;
         background-size: contain;
         cursor: pointer;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
     }
 
     #bayathandwa-sec {
@@ -1017,6 +1192,7 @@ meter::-webkit-meter-optimum-value {
         background: url('../IMAGES/diet_pro.jpg') no-repeat center;
         background-size: cover;
         cursor: pointer;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
     }
 
     #health-sec {
@@ -1044,6 +1220,7 @@ meter::-webkit-meter-optimum-value {
         background: url('../IMAGES/kiddies.png') no-repeat center;
         background-size: contain;
         cursor: pointer;
+        box-shadow: 0 0 0.5rem 0 rgb(185, 182, 182);
     }
 
     #kiddies-sec {
