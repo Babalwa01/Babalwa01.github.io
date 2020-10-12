@@ -19,7 +19,7 @@ ul {
 
 meter::-webkit-meter-optimum-value {
     background: none;
-    background-color: rgb(204, 185, 147);
+    background-color: rgb(190, 184, 170);
 }
 
 /* mobile screen */
@@ -43,16 +43,21 @@ meter::-webkit-meter-optimum-value {
     }
 
     .menu-img {
-        width: 10%;
+        width: 40%;
+        margin-top: 18%;
     }
 
     .header-nav {
         box-shadow: 0 0 0.5rem 0 black;
         height: 11vh;
+        position: fixed;
+        background: url('../IMAGES/programmer.jpg') no-repeat center fixed;
+        background-size: cover;
+        
     }
 
     .menu-link {
-        margin-bottom: 0;
+        position: fixed;
     }
 
     #about-item {
@@ -80,12 +85,13 @@ meter::-webkit-meter-optimum-value {
 
     .intro-sec h4 {
         grid-row: 3/4;
+        grid-row: 5/6;
         grid-column: 9/11;
         color: rgb(238, 231, 231);
     }
 
     .intro-sec h1 {
-        grid-row: 5/6;
+        grid-row: 6/7;
         grid-column: 3/18;
         color: rgb(238, 231, 231);
     }
@@ -103,6 +109,8 @@ meter::-webkit-meter-optimum-value {
         color: white;
         border-radius: 5px;
         cursor: pointer;
+        margin-top: 40%;
+
     }
 
     #about-sec {
@@ -433,7 +441,7 @@ meter::-webkit-meter-optimum-value {
     .available-sec {
         grid-row: 67/73;
         grid-column: 1/21;
-        background-color: rgb(204, 185, 147);
+        background-color: rgb(190, 184, 170);
     }
 
     .available-h {
@@ -776,7 +784,7 @@ meter::-webkit-meter-optimum-value {
         margin-right: 20%;
         margin-left: 20%;
         border-radius: 5px;
-        background-color: rgb(204, 185, 147);
+        background-color: rgb(190, 184, 170);
         color: white;
         cursor: pointer;
     }
@@ -790,7 +798,7 @@ meter::-webkit-meter-optimum-value {
         display: grid;
         grid-template-rows: repeat(21, minmax(4vh, auto));
         grid-template-columns: repeat(20, 5%);
-        background-color: rgb(204, 185, 147);
+        background-color: rgb(190, 184, 170);
     }
 
     footer h2 {
@@ -1329,6 +1337,7 @@ meter::-webkit-meter-optimum-value {
         grid-row: 40/49;
         grid-column: 1/21;
         background-color: rgb(204, 185, 147);
+        background-color: rgb(190, 184, 170);
         padding-top: 7%;
     }
 
@@ -1672,7 +1681,7 @@ meter::-webkit-meter-optimum-value {
         width: 14rem;
         margin-right: 14rem;
         border-radius: 5px;
-        background-color: rgb(204, 185, 147);
+        background-color: rgb(190, 184, 170);
         color: white;
         cursor: pointer;
     }
@@ -1691,6 +1700,7 @@ meter::-webkit-meter-optimum-value {
         grid-template-rows: repeat(8, minmax(10vh, auto));
         grid-template-columns: repeat(12, 8.3%);
         background-color: rgb(204, 185, 147);
+        background-color: rgb(190, 184, 170);
     }
 
     footer h2 {
