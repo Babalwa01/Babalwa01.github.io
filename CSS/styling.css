@@ -726,7 +726,7 @@ meter::-webkit-meter-optimum-value {
 
     #contact-sec h1 {
         grid-row: 3/4;
-        grid-column: 8/14;
+        grid-column: 7/15;
     }
 
     #contact-sec p {
@@ -743,7 +743,7 @@ meter::-webkit-meter-optimum-value {
     
     .pic-form img {
         width: 100%;
-        height: 64vh;
+        height: 60vh;
     }
 
     .pic-form .form-container {
@@ -773,7 +773,6 @@ meter::-webkit-meter-optimum-value {
     .contact-form button {
         height: 2rem;
         width: 60%;
-        margin-right: 14rem;
         margin-right: 20%;
         margin-left: 20%;
         border-radius: 5px;
@@ -784,6 +783,128 @@ meter::-webkit-meter-optimum-value {
 
     .contact-form button:hover {
         background-color: gray;
+    }
+
+    footer {
+        text-align: center;
+        display: grid;
+        grid-template-rows: repeat(21, minmax(4vh, auto));
+        grid-template-columns: repeat(20, 5%);
+        background-color: rgb(204, 185, 147);
+    }
+
+    footer h2 {
+        color: white;
+    }
+
+    footer p {
+        color: white;
+    }
+
+    .connect-h {
+        grid-row: 2/3;
+        grid-column: 7/15;
+    }
+
+    .connect-p {
+        grid-row: 4/5;
+        grid-column: 3/19;
+        color: rgb(241, 237, 226);
+    }
+
+    .connect-p:hover {
+        color: white;
+    }
+
+    .links-h {
+        grid-row: 7/8;
+        grid-column: 3/9;
+        text-align: left;
+        font-size: medium;
+    }
+
+    .menu-links {
+        grid-row: 8/9;
+        grid-column: 3/9;
+        text-align: left;
+    }
+
+    .menu-links a p {
+        color: rgb(241, 237, 226);
+    }
+
+    .menu-links a p:hover {
+        color: white;
+    }
+
+    .services-h {
+        grid-row: 7/8;
+        grid-column: 11/19;
+        text-align: left;
+        font-size: medium;
+    }
+
+    .services-links {
+        grid-row: 8/9;
+        grid-column: 11/19;
+        text-align: left;
+    }
+
+    .services-links a p {
+        color: rgb(241, 237, 226);
+    }
+
+    .services-links a p:hover {
+        color: white;
+    }
+
+    .enquiries-h {
+        grid-row: 11/12;
+        grid-column: 7/15;
+        text-align: center;
+        font-size: medium;
+    }
+
+    .enquiries-sec {
+        grid-row: 12/13;
+        grid-column: 6/16;
+
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-rows: repeat(3, minmax(5vh, auto));
+        text-align: left;
+    }
+
+    .enquiries-sec a {
+        margin-bottom: 7%;
+    }
+
+    #mail-link {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .social-h {
+        grid-row: 15/16;
+        grid-column: 7/15;
+        text-align: center;
+        font-size: medium;
+    }
+
+    .social-media-nav {
+        grid-row: 16/17;
+        grid-column: 6/16;
+        text-align: center;
+    }
+
+    .media-icon {
+        width: 2rem;
+    }
+
+    .copyright-p {
+        grid-row: 19/20;
+        grid-column: 3/19;
+        text-align: center;
     }
 }
 
@@ -1567,9 +1688,8 @@ meter::-webkit-meter-optimum-value {
     footer {
         text-align: left;
         display: grid;
-        grid-template-rows: repeat(7, minmax(10vh, auto));
+        grid-template-rows: repeat(8, minmax(10vh, auto));
         grid-template-columns: repeat(12, 8.3%);
-        /* background: url('../IMAGES/background_i.jpg') no-repeat center fixed; */
         background-color: rgb(204, 185, 147);
     }
 
@@ -1655,8 +1775,14 @@ meter::-webkit-meter-optimum-value {
         text-decoration: underline;
     }
 
-    .social-media-nav {
+    .social-h {
         grid-row: 5/6;
+        grid-column: 5/9;
+        text-align: center;
+    }
+
+    .social-media-nav {
+        grid-row: 6/7;
         grid-column: 6/8;
         text-align: center;
     }
@@ -1666,7 +1792,7 @@ meter::-webkit-meter-optimum-value {
     }
 
     .copyright-p {
-        grid-row: 7/8;
+        grid-row: 8/9;
         grid-column: 4/10;
         text-align: center;
     }
