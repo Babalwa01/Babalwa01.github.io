@@ -58,6 +58,8 @@ meter::-webkit-meter-optimum-value {
 
     .menu-link {
         position: fixed;
+        position: absolute;
+        z-index: 3;
     }
 
     #about-item {
