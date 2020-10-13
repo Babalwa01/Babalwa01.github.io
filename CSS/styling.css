@@ -54,6 +54,7 @@ meter::-webkit-meter-optimum-value {
         background: url('../IMAGES/programmer.jpg') no-repeat center fixed;
         background-size: cover;
         transition: 0.5s;
+        opacity: 0.9;
     }
 
     .menu-link {
@@ -972,6 +973,7 @@ meter::-webkit-meter-optimum-value {
         position: fixed;
         background: url('../IMAGES/programmer.jpg') no-repeat center fixed;
         top: 0;
+        opacity: 0.9;
     }
 
     #logo {
