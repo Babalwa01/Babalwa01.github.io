@@ -43,8 +43,16 @@ meter::-webkit-meter-optimum-value {
     }
 
     .menu-img {
-        width: 40%;
-        margin-top: 18%;
+        width: 8%;
+        margin-top: 3.5%;
+        position: fixed;
+        position: absolute;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    .menu-img:hover {
+        opacity: 0.6;
     }
 
     .header-nav {
@@ -55,12 +63,6 @@ meter::-webkit-meter-optimum-value {
         background-size: cover;
         transition: 0.5s;
         opacity: 0.9;
-    }
-
-    .menu-link {
-        position: fixed;
-        position: absolute;
-        z-index: 3;
     }
 
     #about-item {
@@ -80,8 +82,7 @@ meter::-webkit-meter-optimum-value {
         background-color: rgb(159, 170, 169);
         opacity: 0.9;
         color: honeydew;
-        transition: 0.5s;
-        /* display: none; */
+        visibility: hidden;
     }
 
     .side-menu a {
