@@ -53,7 +53,7 @@ meter::-webkit-meter-optimum-value {
         position: fixed;
         background: url('../IMAGES/programmer.jpg') no-repeat center fixed;
         background-size: cover;
-        
+        transition: 0.5s;
     }
 
     .menu-link {
@@ -65,10 +65,21 @@ meter::-webkit-meter-optimum-value {
     }
 
     .side-menu {
-        margin-left: 65%;
-        margin-top: 0;
+        margin-left: 56%;
+        width: 44%;
+        margin-top: 0.5rem;
         text-align: left;
-        display: none;
+        position: absolute;
+        z-index: 2;
+        background-color: rgb(159, 170, 169);
+        opacity: 0.9;
+        color: honeydew;
+        transition: 0.5s;
+        /* display: none; */
+    }
+
+    .side-menu a {
+        color: honeydew;
     }
 
     .side-menu-item {
@@ -948,6 +959,9 @@ meter::-webkit-meter-optimum-value {
         box-shadow: 0 0 0.5rem 0 black;
         display: grid;
         grid-template-columns: repeat(12, 8.33%);
+        position: fixed;
+        background: url('../IMAGES/programmer.jpg') no-repeat center fixed;
+        top: 0;
     }
 
     #logo {
@@ -989,11 +1003,12 @@ meter::-webkit-meter-optimum-value {
     .intro-sec h4 {
         color: rgb(236, 227, 227);
         margin-top: 5%;
+        padding-top: 5%;
     }
 
     .intro-sec h1 {
         color: rgb(236, 227, 227);
-        margin-top: 2%;
+        margin-top: 3%;
     }
     .intro-sec a {
         margin-top: 2%;
