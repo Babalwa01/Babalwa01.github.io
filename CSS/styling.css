@@ -65,9 +65,12 @@ meter::-webkit-meter-optimum-value {
     }
 
     .side-menu {
-        margin-left: 56%;
-        width: 44%;
-        margin-top: 0.5rem;
+        margin-left: 50%;
+        width: 50%;
+        height: 43vh;
+        padding-top: 8%;
+        margin-top: 0rem;
+        top: 0;
         text-align: left;
         position: absolute;
         z-index: 2;
@@ -83,7 +86,12 @@ meter::-webkit-meter-optimum-value {
     }
 
     .side-menu-item {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        
+    }
+
+    .side-menu-item:hover {
+        color: white;
     }
 
     .intro-sec {
