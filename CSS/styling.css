@@ -83,6 +83,8 @@ meter::-webkit-meter-optimum-value {
         opacity: 0.9;
         color: honeydew;
         visibility: hidden;
+        transition: width 2s;
+        transition-timing-function: linear;
     }
 
     .side-menu a {
