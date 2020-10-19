@@ -127,7 +127,7 @@ header {
         color: rgb(238, 231, 231);
     }
 
-    .intro-sec a {
+    .intro-sec-btn {
         grid-column: 7/12;
         grid-row: 7/8;
     }
@@ -142,6 +142,10 @@ header {
         cursor: pointer;
         margin-top: 40%;
 
+    }
+
+    .intro-sec-btn a {
+        color: rgb(236, 227, 227);
     }
 
     #about-sec {
@@ -511,7 +515,7 @@ header {
         grid-column: 8/14;
     }
 
-    #projects-sec h1 {
+    #projects-sec h2 {
         grid-row: 4/5;
         grid-column: 6/16;
     }
@@ -684,7 +688,7 @@ header {
         grid-column: 9/13;
     }
     
-    #blog-section h1 {
+    #blog-section h2 {
         grid-row: 3/4;
         grid-column: 8/14;
     }
@@ -763,7 +767,7 @@ header {
         grid-column: 9/13;
     }
 
-    #contact-sec h1 {
+    #contact-sec h2 {
         grid-row: 3/4;
         grid-column: 7/15;
     }
@@ -995,19 +999,25 @@ header {
         margin-top: 5%;
     }
 
-    .desktop-menu a{
+    .desktop-menu li{
         margin-right: 3rem;
     }
 
     .menu-item {
         font-size: larger;
-        color: rgb(236, 227, 227);
         margin-bottom: 2%;
+    }
+
+    .menu-item a {
+        color: rgb(236, 227, 227);
+    }
+
+    .menu-item a:hover {
+        color: white;
     }
 
     .menu-item:hover {
         border-bottom: 2px solid black;
-        color: white;
     }
 
     .intro-sec {
@@ -1031,7 +1041,6 @@ header {
     }
 
     .intro-sec-btn {
-        color: rgb(236, 227, 227);
         background-color: transparent;
         width: 15%;
         height: 2.5rem;
@@ -1039,6 +1048,10 @@ header {
         margin-top: 2%;
         cursor: pointer;
         font-weight: bold;
+    }
+
+    .intro-sec-btn a {
+        color: rgb(236, 227, 227);
     }
 
     #about-sec {
@@ -1405,7 +1418,7 @@ header {
         grid-row: 3/4;
     }
 
-    #projects-sec h1 {
+    #projects-sec h2 {
         text-align: center;
         grid-column: 8/14;
         grid-row: 4/5;
@@ -1572,7 +1585,7 @@ header {
         grid-row: 3/4;
     }
 
-    #blog-section h1 {
+    #blog-section h2 {
         grid-column: 8/14;
         grid-row: 4/5;
     }
@@ -1660,7 +1673,7 @@ header {
         grid-column: 6/8;
     }
 
-    #contact-sec h1 {
+    #contact-sec h2 {
         grid-row: 4/5;
         grid-column: 5/9;
     }
