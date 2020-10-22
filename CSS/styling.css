@@ -25,7 +25,7 @@ meter::-webkit-meter-optimum-value {
 header {
     font-family: sans-serif;
     width: 100%;
-    background: url('../IMAGES/programmer.jpg') no-repeat center fixed;
+    background: url('../IMAGES/programmer_new.jpg') no-repeat center fixed;
     background-size: cover;
 }
 
@@ -34,7 +34,6 @@ header {
     height: 11vh;
     position: fixed;
     background: url('../IMAGES/programmer.jpg') no-repeat center fixed;
-    background-size: cover;
     transition: 0.5s;
     opacity: 0.9;
 }
@@ -107,44 +106,40 @@ header {
     }
 
     .intro-sec {
-        display: grid;
-        grid-template-rows: repeat(16, minmax(4vh, auto));
-        grid-template-columns: repeat(20, 5%);
-
+        width: 100%;
+        height: 89vh;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .intro-sec h4 {
-        grid-row: 3/4;
-        grid-row: 5/6;
-        grid-column: 9/11;
-        color: rgb(238, 231, 231);
+        color: rgb(236, 227, 227);
+        margin-top: 18%;
+        padding-top: 5%;
     }
 
     .intro-sec h1 {
-        grid-row: 6/7;
-        grid-column: 3/18;
-        color: rgb(238, 231, 231);
+        color: rgb(236, 227, 227);
+        margin-top: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
-    .intro-sec-btn {
-        grid-column: 7/12;
-        grid-row: 7/8;
+    .intro-sec a {
+        padding-top: 4%;
+        width: 35%;
     }
 
-    .intro-sec-btn {
-        width: 35vw;
-        height: 6vh;
+    .intro-sec-p {
         background-color: transparent;
-        font-weight: bolder;
-        color: white;
+        padding-top: 4%;
+        border: 2px solid rgb(70, 67, 67);
+        height: 2.5rem;
         border-radius: 5px;
         cursor: pointer;
-        margin-top: 40%;
-
-    }
-
-    .intro-sec-btn a {
+        font-weight: bold;
         color: rgb(236, 227, 227);
     }
 
@@ -477,6 +472,9 @@ header {
         grid-row: 67/73;
         grid-column: 1/21;
         background-color: rgb(194, 193, 193);
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     }
 
     .available-h {
@@ -487,18 +485,24 @@ header {
         margin-right: 1rem;
     }
 
-    .contact-btn {
+    .contact-btn-link {
         margin-top: 1rem;
-        width: 40%;
-        height: 20%;
         font-size: larger;
         background-color: transparent;
         color: white;
         cursor: pointer;
+        border: 2px solid rgb(70, 67, 67);
         border-radius: 5px;
+        align-self: center;
+        width: 45%;
+        height: 1.8em;
     }
 
-    .contact-btn:hover {
+    .contact-btn-p {
+        margin-top: 2%;
+    }
+
+    .contact-btn-link:hover {
         background-color: gray;
     }
 
@@ -981,7 +985,7 @@ header {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(12, 8.33%);
-        top: 0;
+        /* top: 0; */
     }
 
     #logo {
@@ -1024,6 +1028,9 @@ header {
         width: 100%;
         height: 89vh;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .intro-sec h4 {
@@ -1036,21 +1043,20 @@ header {
         color: rgb(236, 227, 227);
         margin-top: 3%;
     }
+
     .intro-sec a {
-        margin-top: 2%;
+        padding-top: 2%;
+        width: 17%;
     }
 
-    .intro-sec-btn {
+    .intro-sec-p {
         background-color: transparent;
-        width: 15%;
+        padding-top: 4%;
+        border: 2px solid rgb(70, 67, 67);
         height: 2.5rem;
         border-radius: 5px;
-        margin-top: 2%;
         cursor: pointer;
         font-weight: bold;
-    }
-
-    .intro-sec-btn a {
         color: rgb(236, 227, 227);
     }
 
@@ -1380,9 +1386,11 @@ header {
     .available-sec {
         grid-row: 40/49;
         grid-column: 1/21;
-        background-color: rgb(204, 185, 147);
-        background-color: rgb(190, 184, 170);
+        background-color: rgb(194, 193, 193);
         padding-top: 7%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     }
 
     .available-h {
@@ -1390,18 +1398,24 @@ header {
         color: white;
     }
 
-    .contact-btn {
-        margin-top: 2%;
-        width: 20%;
-        height: 20%;
+    .contact-btn-link {
+        margin-top: 1rem;
         font-size: larger;
         background-color: transparent;
         color: white;
         cursor: pointer;
+        border: 2px solid rgb(70, 67, 67);
         border-radius: 5px;
+        align-self: center;
+        width: 20%;
+        height: 2em;
     }
 
-    .contact-btn:hover {
+    .contact-btn-p {
+        margin-top: 2%;
+    }
+
+    .contact-btn-link:hover {
         background-color: gray;
     }
 
