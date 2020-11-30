@@ -64,6 +64,13 @@
 
         grid-template-columns: 1fr;
     }
+
+    .skills-info {
+        grid-template-areas: 
+        'skills1' 
+        'skills2';
+        grid-template-columns: 1fr;
+    }
 }
 
 //smartphones
@@ -88,5 +95,15 @@
 
     main#home .icons a{
         padding-right: 2%;
+    }
+
+    main#about h1 {
+        margin-top: 10vh;
+        font-size: 3.5rem;
+    }
+
+    main#skills h1 {
+        margin-top: 10vh;
+        font-size: 3.5rem;
     }
 }

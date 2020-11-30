@@ -186,6 +186,43 @@ main {
   .about-info .umuzi-link img {
     width: 75%; }
 
+.skills-info {
+  margin-top: 5vh;
+  display: grid;
+  grid-gap: 60px;
+  grid-template-areas: 'skills1 skills2';
+  grid-template-columns: repeat(2, 1fr); }
+
+.skills-1 {
+  grid-area: skills1; }
+
+.skills-2 {
+  grid-area: skills2; }
+
+.skills {
+  background: #a39e9e;
+  padding: 1rem;
+  border-bottom: #643d42 5px solid;
+  text-align: center;
+  box-shadow: 0 0 0.5rem 0 #646060;
+  color: #2b2a2a;
+  border-radius: 5px;
+  margin-top: 2rem;
+  padding-bottom: 3rem; }
+  .skills .skills1-containter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 10%; }
+    .skills .skills1-containter img {
+      margin-top: 2rem;
+      width: 3.5rem; }
+  .skills .skills2-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .skills .skills2-container p {
+      margin-top: 1rem;
+      font-weight: bold; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -228,6 +265,9 @@ main {
     width: 10%; }
   .about-info {
     grid-template-areas: 'bio-image' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  .skills-info {
+    grid-template-areas: 'skills1'  'skills2';
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
@@ -241,4 +281,10 @@ main {
   main#home .icons a img {
     width: 17%; }
   main#home .icons a {
-    padding-right: 2%; } }
+    padding-right: 2%; }
+  main#about h1 {
+    margin-top: 10vh;
+    font-size: 3.5rem; }
+  main#skills h1 {
+    margin-top: 10vh;
+    font-size: 3.5rem; } }

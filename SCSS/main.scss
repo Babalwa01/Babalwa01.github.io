@@ -126,6 +126,57 @@ main {
   }
 }
 
+//skills page styling
+.skills-info {
+  margin-top: 5vh;
+  display: grid;
+  grid-gap: 60px;
+  grid-template-areas: 
+  'skills1 skills2';
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skills-1 {
+  grid-area: skills1;
+}
+
+.skills-2 {
+  grid-area: skills2;
+}
+
+.skills {
+  background: rgb(163, 158, 158);
+  padding: 1rem;
+  border-bottom: $secondary-color 5px solid;
+  text-align: center;
+  box-shadow: 0 0 0.5rem 0 rgb(100, 96, 96);
+  color: rgb(43, 42, 42);
+  border-radius: 5px;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+
+  .skills1-containter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 10%;
+  
+    img {
+      margin-top: 2rem;
+      width: 3.5rem;
+    }
+  }
+
+  .skills2-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    p {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  }
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
