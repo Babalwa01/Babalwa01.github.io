@@ -2,35 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Babalwa Mbolekwa">
-    <meta name="description" content="Babalwa Mbolekwa's Portfolio">
     <meta name="author" content="Babalwa Mbolekwa">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <link rel="icon" href="IMAGES/b.png" type="image/ico">
-    <link rel="stylesheet" href="CSS/styling.css">
-    <script src="https://kit.fontawesome.com/1486e5a41d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/main.css">
     <title>Babalwa Mbolekwa</title>
 </head>
-<body>
+<body id="bg-img">
     <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait">
+                    
+                </div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/skills.html" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Contact me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <h1 class="lg-heading">Babalwa <span class="text-secondary">Mbolekwa</span></h1>
+        <h2 class="sm-heading">Computer Systems Engineering Graduate, Web Developer & Programmer</h2>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/babalwa-mbolekwa-a16a94147/" target="_blank" title="LinkedIn link">
+                <img src="IMAGES/linkedIn1.png" alt="linkedIn icon" >
+            </a>
+            <a href="https://twitter.com/_Babalwa" target="_blank" title="twitter link">
+                <img src="IMAGES/twitter1.png" alt="twitter icon">
+            </a>
+            <a href="https://web.facebook.com/babalwa.mbolekwa.9237" target="_blank" title="facebook link">
+                <img src="IMAGES/facebook3.png" alt="facebook icon">
+            </a>
+            <a href="https://github.com/Babalwa01" target="_blank" title="github link">
+                <img src="IMAGES/github.png" alt="github icon">
+            </a>
+        </div>
+    </main>
+    <script src="JAVASCRIPT/main.js"></script>
+    <!-- <header>
         <nav class="header-nav">
             <a href="index.html" title="logo link" class="logo-link"><img id="logo" src="IMAGES/b.png" alt="Logo"></a>
             <img class="menu-img" src="IMAGES/menu.png" alt="Menu icon" onclick="toggleNav()">
             <ul class="side-menu">
                 <li id="about-item" class="side-menu-item"><a href="#about-sec" title="about section link">About me</a></li>
                 <li class="side-menu-item"><a href="#skills-sec" title="skills section link">Skills</a></li>
-                <li class="side-menu-item"><a href="#projects-sec" title="projects section link">Projects</a></li>
-                <li class="side-menu-item"><a href="#blog-section" title="blog section link">My blog</a></li>
                 <li class="side-menu-item"><a href="#contact-sec" title="contact section link">Contact</a></li>
             </ul>
             <ul class="desktop-menu">
                 <li class="menu-item"><a href="#about-sec" title="about section link">About me</a></li>
                 <li class="menu-item"><a href="#skills-sec" title="skills section link">Skills</a></li>
-                <li class="menu-item"><a href="#projects-sec" title="projects section link">Projects</a></li>
-                <li class="menu-item"><a href="#blog-section" title="blog section link">My blog</a></li>
                 <li class="menu-item"><a href="#contact-sec" title="contact section link">Contact</a></li>
             </ul>
-            
         </nav>
         <section class="intro-sec">
             <h4>HELLO, </h4>
@@ -44,14 +83,15 @@
     </header>
     <main>
         <section id="about-sec">
-            <figure class="about-pic-sec">
-
-            </figure>
             <h5 class="welcome-h">WELCOME</h5>
             <h2 class="about-h">About Me</h2>
+            <figure class="about-pic-sec">
+                <img src="IMAGES/babalwa.jpg" alt=";babalwa mbolekwa">
+            </figure>
             <p class="background-p">
-                I am from a small village called Dibinkonzo in Sterkspruit, Eastern Cape. I am kind, a hard-worker 
-                and I enjoy interacting with people and learning from others. I am passionate about coding and solving daily challenges through tech. 
+                I am a Computer Systems Engineering Graduate and aspiring Full Stack Developer. I have experience in Web Development and Customer Service. <br><br>
+                <b>Values:</b> Working Remotely, Team Work, Pursue challenges, Continuous learning <br><br>
+                <b>Goals:</b> Qualified Full Stack Developer, Innovative projects, Work with high value teams and be a Coding Mentor
             </p>
             <h5 class="current-h">WHAT I'M CURRENTLY DOING</h5>
             <aside class="umuzi-sec">
@@ -267,6 +307,6 @@
             Copyright &copy; 2020 All rights reserved | This website was created by Babalwa Mbolekwa
         </p>
     </footer>
-    <script src="JAVASCRIPT/main.js"></script>
+    <script src="JAVASCRIPT/main.js"></script> -->
 </body>
 </html>

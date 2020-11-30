@@ -1,19 +1,58 @@
-let navToggleStatus = false;
+//select DOM items
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+const menuNav = document.querySelector('.menu-nav');
+const menuBranding = document.querySelector('.menu-branding');
+const navItems = document.querySelectorAll('.nav-item');
 
-let toggleNav = () => {
+//set initial state of menu
+let showMenu = false;
 
-    let getSideMenu = document.querySelector(".side-menu");
+menuBtn.addEventListener('click', toggleMenu);
 
-    if(navToggleStatus === false) {
+function toggleMenu() {
+    
+    if(!showMenu) {
 
-        getSideMenu.style.visibility = "visible";
-        getSideMenu.style.transition = "width 2s";
-        navToggleStatus = true;
-    }
-    else if(navToggleStatus === true) {
-        
-        navToggleStatus = false;
-        getSideMenu.style.visibility = "hidden";
+        menuBtn.classList.add('close');
+        menu.classList.add('show');
+        menuNav.classList.add('show');
+        menuBranding.classList.add('show');
+        navItems.forEach(item => item.classList.add('show'));
+
+        //set menu state
+        showMenu = true;
+
+    }else {
+
+        menuBtn.classList.remove('close');
+        menu.classList.remove('show');
+        menuNav.classList.remove('show');
+        menuBranding.classList.remove('show');
+        navItems.forEach(item => item.classList.remove('show'));
+
+        //set menu state
+        showMenu = false;
 
     }
 }
+
+// let navToggleStatus = false;
+
+// let toggleNav = () => {
+
+//     let getSideMenu = document.querySelector(".side-menu");
+
+//     if(navToggleStatus === false) {
+
+//         getSideMenu.style.visibility = "visible";
+//         getSideMenu.style.transition = "width 2s";
+//         navToggleStatus = true;
+//     }
+//     else if(navToggleStatus === true) {
+        
+//         navToggleStatus = false;
+//         getSideMenu.style.visibility = "hidden";
+
+//     }
+// }
