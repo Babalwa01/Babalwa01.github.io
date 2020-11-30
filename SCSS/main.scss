@@ -132,7 +132,8 @@ main {
   display: grid;
   grid-gap: 60px;
   grid-template-areas: 
-  'skills1 skills2';
+  'skills1 skills2'
+  'cv cv';
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -142,6 +143,13 @@ main {
 
 .skills-2 {
   grid-area: skills2;
+}
+
+#cv-link {
+  grid-area: cv;
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
 }
 
 .skills {

@@ -190,7 +190,7 @@ main {
   margin-top: 5vh;
   display: grid;
   grid-gap: 60px;
-  grid-template-areas: 'skills1 skills2';
+  grid-template-areas: 'skills1 skills2' 'cv cv';
   grid-template-columns: repeat(2, 1fr); }
 
 .skills-1 {
@@ -198,6 +198,12 @@ main {
 
 .skills-2 {
   grid-area: skills2; }
+
+#cv-link {
+  grid-area: cv;
+  text-align: center;
+  color: blue;
+  text-decoration: underline; }
 
 .skills {
   background: #a39e9e;
@@ -267,7 +273,7 @@ main {
     grid-template-areas: 'bio-image' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .skills-info {
-    grid-template-areas: 'skills1'  'skills2';
+    grid-template-areas: 'skills1'  'skills2' 'cv';
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
