@@ -1,4 +1,294 @@
-* {
+/* * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header, nav {
+    width: 100%;
+}
+
+#logo {
+    margin-top: 1.1rem;
+}
+
+.side-menu a {
+    color: honeydew;
+}
+
+.side-menu-item {
+    margin-bottom: 1.5rem;
+    
+}
+
+.side-menu-item:hover {
+    color: white;
+}
+
+.menu-item {
+    font-size: larger;
+    margin-bottom: 2%;
+}
+
+.menu-item a {
+    color: rgb(236, 227, 227);
+}
+
+.menu-item a:hover {
+    color: white;
+}
+
+.menu-item:hover {
+    border-bottom: 2px solid black;
+}
+
+.header-nav {
+    box-shadow: 0 0 0.5rem 0 black;
+    background: url('../IMAGES/programmer.jpg') no-repeat center fixed;
+    opacity: 0.9;
+}
+
+header {
+    width: 100%;
+    height: 50rem;
+    background: url('../IMAGES/programmer_new.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+.intro-sec {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.intro-sec h4, h1 {
+    color: rgb(236, 227, 227);
+}
+
+.intro-sec-p {
+    background-color: transparent;
+    border: 2px solid rgb(70, 67, 67);
+    height: 2.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(236, 227, 227);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-sec-p:hover {
+    background-color: rgb(145, 143, 143);
+}
+
+#about-sec {
+    width: 100%;
+}
+
+.about-pic-sec {
+    width: 60%;
+    height: 25.5rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2.5rem;
+}
+
+.about-pic-sec img {
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 767px) {
+    #logo {
+        width: 9%;
+        margin-right: 55%;
+    }
+
+    .menu-img {
+        cursor: pointer;
+        width: 8%;
+        position: absolute;
+        z-index: 3;
+        margin-top: 1.5rem;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .side-menu {
+        margin-left: 60%;
+        width: 40%;
+        height: 42vh;
+        padding-top: 19%;
+        margin-top: 0rem;
+        top: 0;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        background-color: rgb(159, 170, 169);
+        opacity: 0.9;
+        color: honeydew;
+        visibility: hidden;
+    }
+
+    .side-menu li {
+        margin-bottom: 1.5rem;
+    }
+
+    .header-nav {
+        height: 4.5rem;
+    }
+
+    .intro-sec {
+        margin-top: 10%;
+    }
+
+    .intro-sec h4, h1 {
+        font-size: large;
+    }
+
+    .intro-sec-p {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    #about-sec h5 {
+        margin-top: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #logo {
+        width: 10%;
+        margin-right: 60%;
+    }
+
+    .menu-img {
+        display: none;
+    }
+
+    .side-menu {
+        display: none;
+    }
+
+    .header-nav {
+        display: flex;
+        height: 5rem;
+    }
+
+    .desktop-menu {
+        width: 80%;
+        margin-left: 20%;
+        margin-top: 2.8rem;
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header {
+        background: url('../IMAGES/programmer3pro.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+
+    .intro-sec {
+        margin-top: 5%;
+    }
+
+    .intro-sec-p {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    #about-sec {
+        display: grid;
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: repeat(10, minmax(2rem, auto));
+        text-align: left;
+    }
+
+    #about-sec h5 {
+        grid-column: 7/8;
+        grid-row: 2/4;
+    }
+
+    #about-sec h2 {
+        grid-column: 7/9;
+        grid-row: 3/4;
+    }
+
+    .about-pic-sec {
+        grid-column: 1/8;
+        grid-row: 2/10;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    #logo {
+        width: 10%;
+        margin-left: 20%;
+    }
+
+    .header-nav {
+        display: flex;
+        height: 5rem;
+    }
+
+    .desktop-menu {
+        width: 45%;
+        margin-left: 35%;
+        margin-top: 2.8rem;
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .menu-img {
+        display: none;
+    }
+
+    .side-menu {
+        display: none;
+    }
+
+    header {
+        background: url('../IMAGES/programmer3.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+
+    .intro-sec {
+        margin-top: 2%;
+    }
+
+    .intro-sec-p {
+        width: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+} */
+
+/* * {
     margin: 0;
     box-sizing: border-box;
 }
@@ -38,7 +328,7 @@ header {
     opacity: 0.9;
 }
 
-/* mobile screen */
+
 @media screen and (max-width: 768px) {
 
     
@@ -66,9 +356,7 @@ header {
         opacity: 0.6;
     }
 
-    /* ------- */
     
-    /* ------- */
 
     #about-item {
         margin-top: 1rem;
@@ -955,7 +1243,7 @@ header {
     }
 }
 
-/* Tablet-sized screen */
+
 @media screen and (min-width:768px){
 
     .desktop-menu {
@@ -978,14 +1266,14 @@ header {
   }
 
 
-/* Desktop-sized screen */
+
 @media screen and (min-width: 960px){
 
     .header-nav {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(12, 8.33%);
-        /* top: 0; */
+      
     }
 
     #logo {
@@ -1863,4 +2151,4 @@ header {
         grid-column: 4/10;
         text-align: center;
     }
-}
+} */
