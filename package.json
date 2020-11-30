@@ -1,0 +1,22 @@
+{
+  "name": "babalwa01.github.io",
+  "version": "1.0.0",
+  "description": "Responsive portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w SCSS/ -o CSS/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Babalwa01/Babalwa01.github.io.git"
+  },
+  "author": "Babalwa Mbolekwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Babalwa01/Babalwa01.github.io/issues"
+  },
+  "homepage": "https://github.com/Babalwa01/Babalwa01.github.io#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
