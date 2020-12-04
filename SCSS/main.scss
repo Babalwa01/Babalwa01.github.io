@@ -153,7 +153,7 @@ main {
 }
 
 .skills {
-  background: rgb(163, 158, 158);
+  background: rgb(197, 195, 195);
   padding: 1rem;
   border-bottom: $secondary-color 5px solid;
   text-align: center;
@@ -181,6 +181,83 @@ main {
     p {
       margin-top: 1rem;
       font-weight: bold;
+    }
+  }
+}
+
+//contact-info
+.contact-info {
+  margin-top: 12vh;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-areas: 
+  'contact-image contact-form'
+  'empty email-section'
+  'empty social-section';
+  grid-template-columns: repeat(2, 1fr);
+  
+  .contact-image {
+    max-width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    border: $secondary-color 3px solid;
+    box-shadow: 0 0 0.5rem 0 rgb(100, 96, 96);
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-form input {
+    width: 75%;
+    height: 2.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+  }
+
+  .contact-form #message-area {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    padding-left: 1.1rem;
+    width: 75%;
+    height: 18rem;
+  }
+
+  .contact-form button {
+    height: 2rem;
+    width: 60%;
+    border-radius: 5px;
+    background-color: rgb(189, 187, 184);
+    color: rgb(32, 30, 30);
+    cursor: pointer;
+    border: $secondary-color 1px solid;   
+  }
+
+  .contact-form button:hover {
+    background-color: gray;
+    color: white;
+  }
+}
+
+.social-info {
+  text-align: center;
+
+  h2 {
+    font-size: smaller;
+    margin-top: 6vh;
+  }
+
+  .icons {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.5rem;
+      @include easeOut();
+
+      img {
+        width: 3rem;
+      }
     }
   }
 }

@@ -206,7 +206,7 @@ main {
   text-decoration: underline; }
 
 .skills {
-  background: #a39e9e;
+  background: #c5c3c3;
   padding: 1rem;
   border-bottom: #643d42 5px solid;
   text-align: center;
@@ -229,6 +229,57 @@ main {
       margin-top: 1rem;
       font-weight: bold; }
 
+.contact-info {
+  margin-top: 12vh;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-areas: 'contact-image contact-form' 'empty email-section' 'empty social-section';
+  grid-template-columns: repeat(2, 1fr); }
+  .contact-info .contact-image {
+    max-width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    border: #643d42 3px solid;
+    box-shadow: 0 0 0.5rem 0 #646060; }
+  .contact-info .contact-form {
+    max-width: 100%; }
+  .contact-info .contact-form input {
+    width: 75%;
+    height: 2.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding-left: 1rem; }
+  .contact-info .contact-form #message-area {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    padding-left: 1.1rem;
+    width: 75%;
+    height: 18rem; }
+  .contact-info .contact-form button {
+    height: 2rem;
+    width: 60%;
+    border-radius: 5px;
+    background-color: #bdbbb8;
+    color: #201e1e;
+    cursor: pointer;
+    border: #643d42 1px solid; }
+  .contact-info .contact-form button:hover {
+    background-color: gray;
+    color: white; }
+
+.social-info {
+  text-align: center; }
+  .social-info h2 {
+    font-size: smaller;
+    margin-top: 6vh; }
+  .social-info .icons {
+    margin-top: 1rem; }
+    .social-info .icons a {
+      padding: 0.5rem;
+      transition: all 0.5s ease-out; }
+      .social-info .icons a img {
+        width: 3rem; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -238,11 +289,46 @@ main {
 
 @media screen and (min-width: 1171px) {
   main#home .icons a img {
-    width: 4%; } }
+    width: 4%; }
+  .skills1-container {
+    margin-left: 3%;
+    margin-right: 3%; }
+    .skills1-container img {
+      width: 5rem;
+      margin-top: 1.5rem;
+      margin-right: 1rem; }
+  .contact-info {
+    padding-left: 15%;
+    padding-right: 15%; }
+  .contact-form #message-area {
+    height: 15rem; }
+  .social-info h2 {
+    font-size: x-large;
+    margin-top: 5vh;
+    font-weight: bold; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   main#home .icons a img {
-    width: 6%; } }
+    width: 6%; }
+  .skills1-container {
+    margin-left: 3%;
+    margin-right: 3%; }
+    .skills1-container img {
+      width: 4rem;
+      margin-top: 1.5rem;
+      margin-right: 1rem; }
+  .contact-info {
+    padding-left: 15%;
+    padding-right: 15%; }
+  .contact-info {
+    padding-left: 8%;
+    padding-right: 8%; }
+    .contact-info .contact-form #message-area {
+      height: 12rem; }
+  .social-info h2 {
+    font-size: x-large;
+    margin-top: 5vh;
+    font-weight: bold; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -269,17 +355,47 @@ main {
       height: 150px; }
   main#home .icons a img {
     width: 10%; }
+  main#about h1 {
+    margin-top: 10vh;
+    font-size: 3rem; }
   .about-info {
     grid-template-areas: 'bio-image' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .skills-info {
     grid-template-areas: 'skills1'  'skills2' 'cv';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .skills1-container {
+    margin-left: 3%;
+    margin-right: 3%; }
+    .skills1-container img {
+      width: 3rem;
+      margin-top: 1.5rem;
+      margin-right: 1rem; }
+  .contact-info {
+    grid-template-areas: 'contact-image'  'contact-form';
+    grid-template-columns: 1fr;
+    padding-left: 15%;
+    padding-right: 15%; }
+  main#contact h1 {
+    margin-top: 10vh;
+    font-size: 3rem; }
+  .contact-form {
+    margin-top: 3vh; }
+  .contact-form input {
+    max-width: 100%; }
+  .contact-form #message-area {
+    max-width: 100%; }
+  .contact-form button {
+    height: 2rem;
+    width: 50%; } }
 
 @media screen and (max-width: 500px) {
+  main#home {
+    padding-left: 10%;
+    padding-right: 10%; }
   main#home h1 {
     margin-top: 10vh;
-    font-size: 3.5rem; }
+    font-size: 2.5rem; }
   .menu-nav {
     height: 65vh; }
   .menu-branding {
@@ -288,9 +404,35 @@ main {
     width: 17%; }
   main#home .icons a {
     padding-right: 2%; }
+  main#about {
+    padding-left: 10%;
+    padding-right: 10%; }
   main#about h1 {
     margin-top: 10vh;
-    font-size: 3.5rem; }
+    font-size: 2.5rem; }
   main#skills h1 {
     margin-top: 10vh;
-    font-size: 3.5rem; } }
+    font-size: 3.5rem; }
+  .skills1-container {
+    margin-left: 3%;
+    margin-right: 3%; }
+    .skills1-container img {
+      width: 3rem;
+      margin-top: 1.5rem;
+      margin-right: 1rem; }
+  main#contact {
+    padding-right: 10%;
+    padding-left: 10%; }
+  main#contact h1 {
+    margin-top: 10vh;
+    font-size: 2rem; }
+  main#contact h2 {
+    font-size: 1.5rem; }
+  .contact-form button {
+    height: 2rem;
+    width: 100%; }
+  .contact-info {
+    padding-left: 8%;
+    padding-right: 8%; }
+    .contact-info .contact-form #message-area {
+      height: 12rem; } }

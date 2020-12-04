@@ -3,12 +3,77 @@
     main#home .icons a img {
         width: 4%;
     }
+
+    .skills1-container {
+
+        margin-left: 3%;
+        margin-right: 3%;
+
+        img {
+            width: 5rem;
+            margin-top: 1.5rem;
+            margin-right: 1rem;
+        }
+    }
+
+    .contact-info {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .contact-form #message-area {
+        height: 15rem;
+    }
+
+    .social-info {
+      
+        h2 {
+          font-size: x-large;
+          margin-top: 5vh;
+          font-weight: bold;
+        }
+    }
 }
 
 //desktops & laptops
 @include mediaLg {
     main#home .icons a img {
         width: 6%;
+    }
+
+    .skills1-container {
+
+        margin-left: 3%;
+        margin-right: 3%;
+
+        img {
+            width: 4rem;
+            margin-top: 1.5rem;
+            margin-right: 1rem;
+        }
+    }
+
+    .contact-info {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .contact-info {
+        padding-left: 8%;
+        padding-right: 8%;
+
+        .contact-form #message-area {
+            height: 12rem;
+        }
+    }
+
+    .social-info {
+      
+        h2 {
+          font-size: x-large;
+          margin-top: 5vh;
+          font-weight: bold;
+        }
     }
 }
 
@@ -54,6 +119,11 @@
         width: 10%;
     }
 
+    main#about h1 {
+        margin-top: 10vh;
+        font-size: 3rem;
+    }
+
     .about-info {
         grid-template-areas: 
         'bio-image'
@@ -72,14 +142,62 @@
         'cv';
         grid-template-columns: 1fr;
     }
+
+    .skills1-container {
+
+        margin-left: 3%;
+        margin-right: 3%;
+
+        img {
+            width: 3rem;
+            margin-top: 1.5rem;
+            margin-right: 1rem;
+        }
+    }
+
+    .contact-info {
+        grid-template-areas: 
+        'contact-image' 
+        'contact-form';
+        grid-template-columns: 1fr;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    main#contact h1 {
+        margin-top: 10vh;
+        font-size: 3rem;
+    }
+
+    .contact-form {
+        margin-top: 3vh;
+    }
+
+    .contact-form input {
+        max-width: 100%;
+        
+    }
+    
+    .contact-form #message-area {
+        max-width: 100%;
+    }
+
+    .contact-form button {
+       height: 2rem;
+        width: 50%;
+    }
 }
 
 //smartphones
 @include mediaSm {
-    
+    main#home {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
     main#home h1 {
         margin-top: 10vh;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .menu-nav {
@@ -98,13 +216,61 @@
         padding-right: 2%;
     }
 
+    main#about {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
     main#about h1 {
         margin-top: 10vh;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     main#skills h1 {
         margin-top: 10vh;
         font-size: 3.5rem;
+    }
+
+    .skills1-container {
+
+        margin-left: 3%;
+        margin-right: 3%;
+
+        img {
+            width: 3rem;
+            margin-top: 1.5rem;
+            margin-right: 1rem;
+        }
+    }
+
+    main#contact {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    main#contact h1 {
+        margin-top: 10vh;
+        font-size: 2rem;
+    }
+
+    main#contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form {
+
+        button {
+            height: 2rem;
+            width: 100%;
+        }
+    }
+    
+    .contact-info {
+        padding-left: 8%;
+        padding-right: 8%;
+
+        .contact-form #message-area {
+            height: 12rem;
+        }
     }
 }
