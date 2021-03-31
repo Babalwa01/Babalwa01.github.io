@@ -100,7 +100,8 @@ body {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  overflow-x: hidden; }
   body#bg-img {
     background: url(../IMAGES/programmer_new.jpg) no-repeat center fixed;
     background-size: cover; }
@@ -113,6 +114,9 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(155, 152, 150, 0.5); }
+
+.achievement-img {
+  max-width: 100%; }
 
 h1, h2, h3 {
   margin: 0;
@@ -153,44 +157,89 @@ main {
   margin-top: 12vh;
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bio-image bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bio-image bio bio' 'achievements achievements achievements';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     max-width: 70%;
     margin: auto;
     border-radius: 50%;
     border: #643d42 3px solid; }
-  .about-info .job-images {
-    max-width: 15rem;
-    max-height: 10rem;
-    margin-top: 2rem; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #c9c2c2;
-    padding: 1rem;
-    border-bottom: #643d42 5px solid;
+  .about-info .achievements {
+    grid-area: achievements;
     text-align: center;
-    box-shadow: 0 0 0.5rem 0 #646060;
-    color: #2b2a2a;
-    border-radius: 5px;
-    margin-top: 2rem;
-    padding-bottom: 3rem; }
-  .about-info .umuzi-link img {
-    width: 75%; }
+    width: 100%;
+    position: relative; }
+    .about-info .achievements h2 {
+      font-size: x-large;
+      margin-top: 1em; }
+    .about-info .achievements .slidershow {
+      width: 50vw;
+      height: 60vh; }
+      .about-info .achievements .slidershow .navigation {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex; }
+        .about-info .achievements .slidershow .navigation .bar {
+          width: 70px;
+          height: 15px;
+          border: 2px solid #fff;
+          margin: 6px;
+          cursor: pointer;
+          transition: 0.4s; }
+        .about-info .achievements .slidershow .navigation .bar:hover {
+          background: #fff; }
+      .about-info .achievements .slidershow .slides {
+        width: 500%;
+        height: 100%;
+        display: flex; }
+        .about-info .achievements .slidershow .slides input[name="r"] {
+          position: absolute;
+          visibility: hidden; }
+        .about-info .achievements .slidershow .slides .slide {
+          width: 20%;
+          transition: 0.6s; }
+          .about-info .achievements .slidershow .slides .slide img {
+            width: 100%;
+            height: 100%; }
+          .about-info .achievements .slidershow .slides .slide div {
+            position: absolute;
+            background: rgba(91, 184, 55, 0.5);
+            width: 100%;
+            height: 8rem;
+            text-align: left;
+            padding-left: 5%; }
+            .about-info .achievements .slidershow .slides .slide div p .see-more-links {
+              text-decoration: underline; }
+        .about-info .achievements .slidershow .slides #mzamomhle-slide div {
+          height: 6.8rem;
+          background: rgba(77, 13, 8, 0.5); }
+        .about-info .achievements .slidershow .slides #bdcc-slide div {
+          height: 6.8rem;
+          background: rgba(121, 84, 81, 0.7); }
+        .about-info .achievements .slidershow .slides #r1:checked ~ .s1 {
+          margin-left: 0; }
+        .about-info .achievements .slidershow .slides #r2:checked ~ .s1 {
+          margin-left: -20%; }
+        .about-info .achievements .slidershow .slides #r3:checked ~ .s1 {
+          margin-left: -40%; }
+        .about-info .achievements .slidershow .slides #r4:checked ~ .s1 {
+          margin-left: -60%; }
+    .about-info .achievements .middle {
+      position: absolute;
+      margin-top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 .skills-info {
   margin-top: 5vh;
   display: grid;
   grid-gap: 60px;
-  grid-template-areas: 'skills1 skills2' 'cv cv';
+  grid-template-areas: 'skills1 skills2' 'cv cv';
   grid-template-columns: repeat(2, 1fr); }
 
 .skills-1 {
@@ -233,7 +282,7 @@ main {
   margin-top: 12vh;
   display: grid;
   grid-gap: 25px;
-  grid-template-areas: 'contact-image contact-form' 'empty email-section' 'empty social-section';
+  grid-template-areas: 'contact-image contact-form' 'empty email-section' 'empty social-section';
   grid-template-columns: repeat(2, 1fr); }
   .contact-info .contact-image {
     max-width: 100%;
@@ -359,10 +408,10 @@ main {
     margin-top: 10vh;
     font-size: 3rem; }
   .about-info {
-    grid-template-areas: 'bio-image' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bio-image' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .skills-info {
-    grid-template-areas: 'skills1'  'skills2' 'cv';
+    grid-template-areas: 'skills1'  'skills2' 'cv';
     grid-template-columns: 1fr; }
   .skills1-container {
     margin-left: 3%;
@@ -372,7 +421,7 @@ main {
       margin-top: 1.5rem;
       margin-right: 1rem; }
   .contact-info {
-    grid-template-areas: 'contact-image'  'contact-form';
+    grid-template-areas: 'contact-image'  'contact-form';
     grid-template-columns: 1fr;
     padding-left: 15%;
     padding-right: 15%; }

@@ -45,7 +45,8 @@
         <h2 class="sm-heading">I am interested in collaborating and learning in the tech industry...</h2>
         <div class="contact-info">
             <img src="IMAGES/contact_img.jpg" alt="Babalwa Mbolekwa" class="contact-image">
-            <form class="contact-form" action="mailto:babalwambolekwa93@gmail.com" method="POST" enctype="text/plain">
+            <!-- <form id="contactForm" class="contact-form" action="mailto:babalwambolekwa93@gmail.com" method="POST" enctype="text/plain"> -->
+                <form id="contactForm" class="contact-form">
                 <input type="text" name="Name" id="name-input" placeholder="Your Name"><br>
                 <input type="text" name="E-mail" id="email-input" placeholder="Your Email"><br>
                 <input type="text" name="Subject" id="subject-input" placeholder="Subject"><br>
@@ -69,11 +70,16 @@
                     <img src="IMAGES/githubicon.png" alt="github icon">
                 </a>
             </div>
+            <h2>E-mail</h2>
+            <div id="email-div" style="font-size: 90%; font-weight: bold; color:rgb(68, 66, 66)">babalwambolekwa93@gmail.com</div>
         </div>
     </main>
     <footer id="main-footer">
-        Copyright &copy; | This website was created by Babalwa Mbolekwa
+        Copyright &copy; | Created by Babalwa Mbolekwa
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
     <script src="JAVASCRIPT/main.js"></script>
+    <script src="JAVASCRIPT/contact.js"></script>
 </body>
 </html>

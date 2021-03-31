@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Babalwa01/Babalwa01.github.io#readme",
   "dependencies": {
+    "firebase": "^8.3.1",
     "node-sass": "^5.0.0"
   }
 }
