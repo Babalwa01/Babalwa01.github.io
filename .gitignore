@@ -4,6 +4,10 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 node_modules
+JAVASCRIPT/contact.js
+DOCS
+IMAGES
+SCSS
 
 # User-specific files
 *.rsuser
