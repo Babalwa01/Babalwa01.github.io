@@ -244,6 +244,94 @@
                     font-size: 70%;
                 }
             }
+
+            .achievements {
+                h2 {
+                    margin-top: 1vh;
+                    font-size: 99%;
+                    width: 100%;
+                }
+
+                .slidershow {
+                    top: 33vh;
+                    width: 100%;
+
+                    .navigation {
+                        display: none;
+                    }
+
+                    .slides {
+
+                        input {
+                            display: none;
+                        }
+
+                        display: flex;
+                        flex-direction: column;
+
+                        .slide {
+
+                            height: 30vh;
+                            margin-bottom: 1rem;
+                            border: $secondary-color 2px solid;
+                            box-shadow: 0 0 0.7rem 0 rgb(100, 96, 96);
+
+                            div {
+
+                                padding-right: 0.8rem;
+                                max-height: 80%;
+                                max-width: 100%;
+                                box-shadow: 0 0 0.7rem 0 rgb(100, 96, 96);
+                            
+                                p {
+                                    font-size: 75%;
+                                }
+                            }
+
+                            .mzamomhle-div {
+                                height: 42%;
+                            }
+
+                            .umuzi-div {
+                                height: 40%;
+                            }
+
+                            .bdcc-div {
+                                height: 40%;
+                                background: rgba(rgb(121, 84, 81), 0.6);
+                            }
+
+                            img {
+                                max-height: 100%;
+                                max-width: 100%;
+                            }
+                        }
+
+                        // grid-template-areas: 
+                        //     'slide1' 
+                        //     'slide2'
+                        //     'slide3'
+                        //     'slide4';
+                        // grid-template-columns: 1fr;
+
+                        // .s1 {
+                        //     grid-area: slide1;
+                        // }
+
+                        // #mzamomhle-slide {
+                        //     grid-area: slide2;
+                        // }
+
+                        // #bdcc-slide {
+                        //     grid-area: slide3;
+                        // }
+
+                        // #cput-slide {
+                        //     grid-area: slide4;
+                        // }
+                    }
+                }
+            }
         }
     }
 
