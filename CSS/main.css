@@ -486,6 +486,8 @@ main {
         flex-direction: column; }
         main#about .about-info .achievements .slidershow .slides input {
           display: none; }
+        main#about .about-info .achievements .slidershow .slides #umuzi-slide {
+          box-shadow: 0 0 0.7rem 0 #5bb837; }
         main#about .about-info .achievements .slidershow .slides .slide {
           height: 30vh;
           margin-bottom: 1rem;

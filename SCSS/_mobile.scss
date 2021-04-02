@@ -269,6 +269,10 @@
                         display: flex;
                         flex-direction: column;
 
+                        #umuzi-slide {
+                            box-shadow: 0 0 0.7rem 0 rgb(91, 184, 55);
+                        }
+
                         .slide {
 
                             height: 30vh;
