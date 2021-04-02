@@ -133,6 +133,10 @@
         'achievements';
 
         grid-template-columns: 1fr;
+
+        .bio-image {
+            max-width: 40%;
+        }
     }
 
     .skills-info {
@@ -225,6 +229,22 @@
     main#about {
         padding-left: 10%;
         padding-right: 10%;
+
+        .about-info {
+            .bio-image {
+                max-width: 60%;
+            }
+
+            .bio {
+                h3 {
+                    font-size: 95%;
+                }
+
+                p {
+                    font-size: 70%;
+                }
+            }
+        }
     }
 
     main#about h1 {
