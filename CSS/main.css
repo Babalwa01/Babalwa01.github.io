@@ -343,8 +343,16 @@ main {
   padding: 1rem;
   background: #91908e;
   color: set-text-color(#aaa9a8);
-  height: 60px;
+  height: 60px; }
+
+.about-footer {
   margin-top: 70vh; }
+
+.skills-footer {
+  top: 5vh; }
+
+#community #h1-heading {
+  font-size: 5rem; }
 
 @media screen and (min-width: 1171px) {
   main#home .icons a img {
@@ -575,6 +583,4 @@ main {
     padding-left: 8%;
     padding-right: 8%; }
     .contact-info .contact-form #message-area {
-      height: 12rem; }
-  #main-footer {
-    margin-top: 130vh; } }
+      height: 12rem; } }

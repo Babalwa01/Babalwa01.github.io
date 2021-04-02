@@ -405,7 +405,21 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+  // margin-top: 70vh;
+}
+
+.about-footer {
   margin-top: 70vh;
+}
+
+.skills-footer {
+  top: 5vh;
+}
+
+#community {
+  #h1-heading {
+    font-size: 5rem;
+  }
 }
 
 @import 'mobile';
