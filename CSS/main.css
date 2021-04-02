@@ -453,6 +453,8 @@ main {
     font-size: 2.5rem; }
   .menu-nav {
     height: 65vh; }
+    .menu-nav .nav-item a {
+      font-size: 75%; }
   .menu-branding {
     height: 35vh; }
   main#home .icons a img {

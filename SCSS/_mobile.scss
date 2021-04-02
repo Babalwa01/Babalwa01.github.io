@@ -202,6 +202,12 @@
 
     .menu-nav {
         height: 65vh;
+
+        .nav-item {
+            a {
+                font-size: 75%;
+            }
+        }
     }
 
     .menu-branding {
