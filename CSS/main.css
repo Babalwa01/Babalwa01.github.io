@@ -414,7 +414,7 @@ main {
     margin-top: 10vh;
     font-size: 3rem; }
   .about-info {
-    grid-template-areas: 'bio-image' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bio-image' 'bio' 'achievements' 'achievements' 'achievements';
     grid-template-columns: 1fr; }
   .skills-info {
     grid-template-areas: 'skills1'  'skills2' 'cv';
