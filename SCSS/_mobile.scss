@@ -137,6 +137,45 @@
         .bio-image {
             max-width: 40%;
         }
+
+        .achievements {
+            grid-area: achievements;
+            
+            .slidershow {
+                top: 8rem;
+                height: 30vh;
+
+                .slides {
+
+                    #mzamomhle-slide {
+                        .mzamomhle-div {
+                            height: 21vh;
+                        }
+                    }
+
+                    #bdcc-slide {
+                        .bdcc-div {
+                            height: 21vh;
+                        }
+                    }
+
+                    .slide {
+
+                        div {
+                            height: 70%;
+                            p {
+                                font-size: 82%;
+                            }
+                        }
+
+                        img {
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .skills-info {
