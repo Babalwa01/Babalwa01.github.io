@@ -41,6 +41,20 @@
         width: 6%;
     }
 
+    .navigation {
+        position: relative;
+        margin-top: 0;
+    }
+
+    .slidershow {
+        top: 25vh;
+        .slides {
+            .slide {
+                height: 30vh;
+            }
+        }
+    }
+
     .skills1-container {
 
         margin-left: 3%;
@@ -292,7 +306,7 @@
                 }
 
                 .slidershow {
-                    top: 33vh;
+                    top: 17vh;
                     width: 100%;
 
                     .navigation {
@@ -332,16 +346,26 @@
                             }
 
                             .mzamomhle-div {
-                                height: 42%;
+                                height: 72%;
+                                p {
+                                    font-size: 70%;
+                                }
                             }
 
                             .umuzi-div {
-                                height: 40%;
+                                height: 72%;
+
+                                p {
+                                    font-size: 70%;
+                                }
                             }
 
                             .bdcc-div {
-                                height: 40%;
+                                height: 72%;
                                 background: rgba(rgb(121, 84, 81), 0.6);
+                                p {
+                                    font-size: 70%;
+                                }
                             }
 
                             img {

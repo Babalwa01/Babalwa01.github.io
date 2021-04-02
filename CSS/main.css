@@ -365,6 +365,13 @@ main {
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   main#home .icons a img {
     width: 6%; }
+  .navigation {
+    position: relative;
+    margin-top: 0; }
+  .slidershow {
+    top: 25vh; }
+    .slidershow .slides .slide {
+      height: 30vh; }
   .skills1-container {
     margin-left: 3%;
     margin-right: 3%; }
@@ -493,7 +500,7 @@ main {
       font-size: 99%;
       width: 100%; }
     main#about .about-info .achievements .slidershow {
-      top: 33vh;
+      top: 17vh;
       width: 100%; }
       main#about .about-info .achievements .slidershow .navigation {
         display: none; }
@@ -517,12 +524,18 @@ main {
             main#about .about-info .achievements .slidershow .slides .slide div p {
               font-size: 75%; }
           main#about .about-info .achievements .slidershow .slides .slide .mzamomhle-div {
-            height: 42%; }
+            height: 72%; }
+            main#about .about-info .achievements .slidershow .slides .slide .mzamomhle-div p {
+              font-size: 70%; }
           main#about .about-info .achievements .slidershow .slides .slide .umuzi-div {
-            height: 40%; }
+            height: 72%; }
+            main#about .about-info .achievements .slidershow .slides .slide .umuzi-div p {
+              font-size: 70%; }
           main#about .about-info .achievements .slidershow .slides .slide .bdcc-div {
-            height: 40%;
+            height: 72%;
             background: rgba(121, 84, 81, 0.6); }
+            main#about .about-info .achievements .slidershow .slides .slide .bdcc-div p {
+              font-size: 70%; }
           main#about .about-info .achievements .slidershow .slides .slide img {
             max-height: 100%;
             max-width: 100%; }
