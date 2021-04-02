@@ -183,7 +183,13 @@ main {
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
-        display: flex; }
+        display: flex;
+        display: grid;
+        grid-template-areas: 'text text text text' 'nav-bar nav-bar nav-bar nav-bar'; }
+        .about-info .achievements .slidershow .navigation .navigation-instruction {
+          grid-area: text;
+          font-size: 10.5px;
+          transition: 0.2s; }
         .about-info .achievements .slidershow .navigation .bar {
           width: 70px;
           height: 15px;

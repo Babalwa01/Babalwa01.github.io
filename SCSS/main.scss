@@ -122,6 +122,17 @@ main {
         transform: translateX(-50%);
         display: flex;
 
+        display: grid;
+        grid-template-areas: 
+        'text text text text'
+        'nav-bar nav-bar nav-bar nav-bar';
+
+        .navigation-instruction {
+          grid-area: text;
+          font-size: 10.5px;
+          transition: 0.2s;
+        }
+
         .bar {
           width: 70px;
           height: 15px;
