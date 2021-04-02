@@ -208,7 +208,10 @@ main {
           visibility: hidden; }
         .about-info .achievements .slidershow .slides .slide {
           width: 20%;
-          transition: 0.6s; }
+          transition: 0.6s;
+          border: #643d42 2px solid;
+          box-shadow: 0 0 0.7rem 0 #646060;
+          margin-right: 0.5rem; }
           .about-info .achievements .slidershow .slides .slide img {
             width: 100%;
             height: 100%; }
@@ -340,7 +343,8 @@ main {
   padding: 1rem;
   background: #91908e;
   color: set-text-color(#aaa9a8);
-  height: 60px; }
+  height: 60px;
+  margin-top: 70vh; }
 
 @media screen and (min-width: 1171px) {
   main#home .icons a img {
@@ -390,7 +394,9 @@ main {
   .social-info h2 {
     font-size: x-large;
     margin-top: 5vh;
-    font-weight: bold; } }
+    font-weight: bold; }
+  #main-footer {
+    margin-top: 25vh; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -467,7 +473,9 @@ main {
     max-width: 100%; }
   .contact-form button {
     height: 2rem;
-    width: 50%; } }
+    width: 50%; }
+  #main-footer {
+    margin-top: 35vh; } }
 
 @media screen and (max-width: 500px) {
   main#home {
@@ -567,4 +575,6 @@ main {
     padding-left: 8%;
     padding-right: 8%; }
     .contact-info .contact-form #message-area {
-      height: 12rem; } }
+      height: 12rem; }
+  #main-footer {
+    margin-top: 130vh; } }

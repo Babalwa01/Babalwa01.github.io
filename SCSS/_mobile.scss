@@ -89,6 +89,10 @@
           font-weight: bold;
         }
     }
+
+    #main-footer {
+        margin-top: 25vh;
+    }
 }
 
 //tablets and small laptops
@@ -242,6 +246,10 @@
     .contact-form button {
        height: 2rem;
         width: 50%;
+    }
+
+    #main-footer {
+        margin-top: 35vh;
     }
 }
 
@@ -453,5 +461,9 @@
         .contact-form #message-area {
             height: 12rem;
         }
+    }
+
+    #main-footer {
+        margin-top: 130vh;
     }
 }
