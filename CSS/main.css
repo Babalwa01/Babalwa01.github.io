@@ -244,6 +244,117 @@ main {
       left: 50%;
       transform: translate(-50%, -50%); }
 
+.community-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'about about about about about' 'vegetables vegetables vegetables vegetables vegetables' 'galleryContainer galleryContainer galleryContainer galleryContainer galleryContainer'; }
+  .community-info #project-info {
+    grid-area: about; }
+  .community-info #vegetables {
+    grid-area: vegetables; }
+  .community-info .gallery-container {
+    grid-area: galleryContainer;
+    display: flex;
+    flex-direction: column; }
+    .community-info .gallery-container .gallery-pics {
+      display: grid;
+      grid-template-columns: repeat(4, 25%); }
+      .community-info .gallery-container .gallery-pics .pic {
+        width: 98%;
+        height: 15rem;
+        border-radius: 5px;
+        border: #643d42 1px solid;
+        box-shadow: 0 0 0.5rem 0 #646060;
+        margin-bottom: 0.3rem; }
+      .community-info .gallery-container .gallery-pics .pic1 {
+        background: url("../IMAGES/mzamomhle/pic1.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic2 {
+        background: url("../IMAGES/mzamomhle/pic2.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic3 {
+        background: url("../IMAGES/mzamomhle/pic3.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic4 {
+        background: url("../IMAGES/mzamomhle/pic4.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic5 {
+        background: url("../IMAGES/mzamomhle/pic5.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic6 {
+        background: url("../IMAGES/mzamomhle/pic6.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic7 {
+        background: url("../IMAGES/mzamomhle/pic7.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic8 {
+        background: url("../IMAGES/mzamomhle/pic8.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic9 {
+        background: url("../IMAGES/mzamomhle/pic9.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic10 {
+        background: url("../IMAGES/mzamomhle/pic10.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic11 {
+        background: url("../IMAGES/mzamomhle/pic11.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic12 {
+        background: url("../IMAGES/mzamomhle/pic12.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic13 {
+        background: url("../IMAGES/mzamomhle/pic13.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic14 {
+        background: url("../IMAGES/mzamomhle/pic14.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic15 {
+        background: url("../IMAGES/mzamomhle/pic15.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic16 {
+        background: url("../IMAGES/mzamomhle/pic16.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic17 {
+        background: url("../IMAGES/mzamomhle/pic17.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic18 {
+        background: url("../IMAGES/mzamomhle/pic18.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic19 {
+        background: url("../IMAGES/mzamomhle/pic19.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic20 {
+        background: url("../IMAGES/mzamomhle/pic20.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic21 {
+        background: url("../IMAGES/mzamomhle/pic21.jpg");
+        background-position: center;
+        background-size: cover; }
+      .community-info .gallery-container .gallery-pics .pic22 {
+        background: url("../IMAGES/mzamomhle/pic22.jpg");
+        background-position: center;
+        background-size: cover; }
+
 .skills-info {
   margin-top: 5vh;
   display: grid;
@@ -353,6 +464,10 @@ main {
 
 #community #h1-heading {
   font-size: 5rem; }
+
+#vegetables-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); }
 
 @media screen and (min-width: 1171px) {
   main#home .icons a img {
@@ -557,6 +672,8 @@ main {
             max-width: 100%; }
   main#about h1 {
     margin-top: 10vh;
+    font-size: 2.5rem; }
+  #community h1 {
     font-size: 2.5rem; }
   main#skills h1 {
     margin-top: 10vh;
