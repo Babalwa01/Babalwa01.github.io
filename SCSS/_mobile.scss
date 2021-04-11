@@ -415,29 +415,6 @@
                                 max-width: 100%;
                             }
                         }
-
-                        // grid-template-areas: 
-                        //     'slide1' 
-                        //     'slide2'
-                        //     'slide3'
-                        //     'slide4';
-                        // grid-template-columns: 1fr;
-
-                        // .s1 {
-                        //     grid-area: slide1;
-                        // }
-
-                        // #mzamomhle-slide {
-                        //     grid-area: slide2;
-                        // }
-
-                        // #bdcc-slide {
-                        //     grid-area: slide3;
-                        // }
-
-                        // #cput-slide {
-                        //     grid-area: slide4;
-                        // }
                     }
                 }
             }
@@ -551,6 +528,22 @@
                     }
                 }
             }
+        }
+    }
+
+    #projects {
+        text-align: center;
+        .lg-heading {
+            font-size: 38px;
+        }
+
+        .sm-heading {
+            font-size: 1.5rem;
+        }
+
+        .projects-info {
+            text-align: center;
+            width: 100%;
         }
     }
 

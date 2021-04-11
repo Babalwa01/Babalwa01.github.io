@@ -762,6 +762,15 @@ main {
       flex-direction: column; }
       #community .community-info .gallery-container .gallery-pics .pic {
         height: 7rem; }
+  #projects {
+    text-align: center; }
+    #projects .lg-heading {
+      font-size: 38px; }
+    #projects .sm-heading {
+      font-size: 1.5rem; }
+    #projects .projects-info {
+      text-align: center;
+      width: 100%; }
   #about-body #main-footer {
     margin-top: 130vh; }
   #community-body #main-footer {
