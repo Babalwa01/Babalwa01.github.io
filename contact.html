@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="CSS/main.css">
     <title>Contact me</title>
 </head>
-<body >
+<body id="contact-body">
     <header>
         <div class="menu-btn">
             <div class="btn-line"></div>
@@ -46,13 +46,13 @@
         <div class="contact-info">
             <img src="IMAGES/contact_img1.jpg" alt="Babalwa Mbolekwa" class="contact-image">
             <!-- <form id="contactForm" class="contact-form" action="mailto:babalwambolekwa93@gmail.com" method="POST" enctype="text/plain"> -->
-                <form id="contactForm" class="contact-form">
-                <input type="text" name="Name" id="name-input" placeholder="Your Name"><br>
-                <input type="text" name="E-mail" id="email-input" placeholder="Your Email"><br>
-                <input type="text" name="Subject" id="subject-input" placeholder="Subject"><br>
-                <textarea name="Message" id="message-area" cols="59" rows="8" placeholder="Message"></textarea><br>
-                <button type="submit">Send Message</button>
-            </form>
+                <div id="contactForm" class="contact-form">
+                    <input type="text" name="Name" id="name-input" placeholder="Your Name"><br>
+                    <input type="text" name="E-mail" id="email-input" placeholder="Your Email"><br>
+                    <input type="text" name="Subject" id="subject-input" placeholder="Subject"><br>
+                    <textarea name="Message" id="message-area" cols="59" rows="8" placeholder="Message"></textarea><br>
+                    <button id="submit-btn">Send Message</button>
+                </div>
         </div>
         <div class="social-info">
             <h2>Social</h2>
@@ -79,7 +79,9 @@
     </footer>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="JAVASCRIPT/main.js"></script>
-    <script src="JAVASCRIPT/contact.js"></script>
+    <script src="JAVASCRIPT/test.js"></script>
 </body>
 </html>

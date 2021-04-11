@@ -570,6 +570,17 @@ main {
         .about-info .achievements .slidershow .slides .slide img {
           max-width: 100%;
           max-height: 100%; }
+  #community #h1-heading {
+    font-size: 35px; }
+  #community .sm-heading {
+    font-size: 16px; }
+  #community .community-info #vegetables #vegetables-list {
+    text-align: left; }
+  #community .community-info .gallery-container .gallery-pics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    #community .community-info .gallery-container .gallery-pics .pic {
+      height: 10rem; }
   .skills-info {
     grid-template-areas: 'skills1'  'skills2' 'cv';
     grid-template-columns: 1fr; }
@@ -700,4 +711,41 @@ main {
     padding-left: 8%;
     padding-right: 8%; }
     .contact-info .contact-form #message-area {
-      height: 12rem; } }
+      height: 12rem; }
+  #community #h1-heading {
+    font-size: 30px; }
+  #community .sm-heading {
+    font-size: 16px; }
+  #community .community-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; }
+    #community .community-info #project-info {
+      width: 100%;
+      text-align: center;
+      font-size: 12px; }
+    #community .community-info #vegetables {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      #community .community-info #vegetables #vegetables-title {
+        width: 100%; }
+      #community .community-info #vegetables #vegetables-list {
+        display: grid;
+        grid-template-columns: none;
+        text-align: left; }
+    #community .community-info .gallery-container .gallery-pics {
+      display: flex;
+      flex-direction: column; }
+      #community .community-info .gallery-container .gallery-pics .pic {
+        height: 7rem; }
+  #about-body #main-footer {
+    margin-top: 130vh; }
+  #community-body #main-footer {
+    margin-top: 5vh; }
+  #skills-body #main-footer {
+    margin-top: 3vh; }
+  #contact-body #main-footer {
+    margin-top: 3vh; } }

@@ -196,6 +196,40 @@
         }
     }
 
+    //--------
+    #community {
+        #h1-heading {
+            font-size: 35px;
+        }
+
+        .sm-heading {
+            font-size: 16px;
+        }
+
+        .community-info {
+
+            #vegetables {
+
+                #vegetables-list {
+                    text-align: left;
+                }
+            }
+
+            .gallery-container {
+                .gallery-pics {
+
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+
+                    .pic {
+                        height: 10rem;
+                    }
+                }
+            }
+        }
+    }
+    //--------
+
     .skills-info {
         grid-template-areas: 
         'skills1' 
@@ -469,11 +503,78 @@
         }
     }
 
-    // #main-footer {
-    //     margin-top: 130vh;
-    // }
+    #community {
+        #h1-heading {
+            font-size: 30px;
+        }
 
-    // .skills-footer {
-    //     margin-top: 10vh;
-    // }
+        .sm-heading {
+            font-size: 16px;
+        }
+
+        .community-info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+
+            #project-info {
+                width: 100%;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            #vegetables {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                #vegetables-title {
+                    width: 100%;
+                }
+
+                #vegetables-list {
+                    display: grid;
+                    grid-template-columns: none;
+                    text-align: left;
+                }
+            }
+
+            .gallery-container {
+                .gallery-pics {
+                    display: flex;
+                    flex-direction: column;
+
+                    .pic {
+                        height: 7rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #about-body {
+        #main-footer {
+            margin-top: 130vh;
+        }
+    }
+
+    #community-body {
+        #main-footer {
+            margin-top: 5vh;
+        }
+    }
+
+    #skills-body {
+        #main-footer {
+            margin-top: 3vh;
+        }
+    }
+
+    #contact-body {
+        #main-footer {
+            margin-top: 3vh;
+        }
+    }
 }
