@@ -586,6 +586,33 @@ main {
   }
 }
 
+//projects-info
+.projects-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  .tic-tac-toe {
+    background: url("../IMAGES/programmer_new.jpg");
+    background-size: cover;
+    height: 13rem;
+    width: 13rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid $secondary-color;
+
+    div {
+      width: 100%;
+      height: 100%;
+      font-size: 1.9rem;
+      display: flex;
+      align-items: center;
+      background: rgba(rgb(92, 60, 57), 0.5);
+      border-radius: 50%;
+    }
+  }
+}
+
 //contact-info
 .contact-info {
   margin-top: 12vh;
