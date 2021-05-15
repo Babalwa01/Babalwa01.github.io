@@ -401,27 +401,33 @@ main {
 .projects-info {
   display: grid;
   grid-template-columns: repeat(4, 1fr); }
-  .projects-info .tic-tac-toe {
-    background: url("../IMAGES/tictactoe.png");
-    background-size: cover;
+  .projects-info .project-div {
     height: 13rem;
     width: 13rem;
     text-align: center;
     border-radius: 2px;
     border: 2px solid #643d42; }
-    .projects-info .tic-tac-toe .project-inner-div {
-      width: 100%;
-      height: 100%;
-      background: rgba(92, 60, 57, 0.5);
-      display: grid; }
-      .projects-info .tic-tac-toe .project-inner-div .project-title {
-        font-weight: bold;
-        font-size: 20px; }
-      .projects-info .tic-tac-toe .project-inner-div .project-title:hover {
-        font-size: 22px; }
-      .projects-info .tic-tac-toe .project-inner-div .project-buttons {
-        display: flex;
-        flex-direction: column; }
+  .projects-info .tic-tac-toe {
+    background: url("../IMAGES/tictactoe.png");
+    background-size: cover; }
+  .projects-info .memory-game {
+    background: url("../IMAGES/memorygame.jpg");
+    background-size: cover; }
+    .projects-info .memory-game .project-inner-div {
+      background: rgba(92, 60, 57, 0.7); }
+
+.project-title {
+  font-weight: bold;
+  font-size: 20px; }
+
+.project-title:hover {
+  font-size: 22px; }
+
+.project-inner-div {
+  width: 100%;
+  height: 100%;
+  background: rgba(92, 60, 57, 0.5);
+  display: grid; }
 
 .project-btn {
   cursor: pointer;
@@ -629,6 +635,8 @@ main {
       width: 3rem;
       margin-top: 1.5rem;
       margin-right: 1rem; }
+  .projects-info .project-div {
+    margin-right: 1rem; }
   .contact-info {
     grid-template-areas: 'contact-image'  'contact-form';
     grid-template-columns: 1fr;
@@ -787,7 +795,11 @@ main {
       font-size: 1.5rem; }
     #projects .projects-info {
       text-align: center;
-      width: 100%; }
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      #projects .projects-info .project-div {
+        margin-top: 1rem; }
   #about-body #main-footer {
     margin-top: 130vh; }
   #community-body #main-footer {

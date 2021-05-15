@@ -464,36 +464,51 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
-  .tic-tac-toe {
-    background: url("../IMAGES/tictactoe.png");
-    background-size: cover;
+  .project-div {
     height: 13rem;
     width: 13rem;
     text-align: center;
     border-radius: 2px;
     border: 2px solid $secondary-color;
+  }
+
+  .tic-tac-toe {
+    background: url("../IMAGES/tictactoe.png");
+    background-size: cover;
 
     .project-inner-div {
-      width: 100%;
-      height: 100%;
-      background: rgba(rgb(92, 60, 57), 0.5);
-      display: grid;
 
-      .project-title {
-        font-weight: bold;
-        font-size: 20px;
-      }
-
-      .project-title:hover {
-        font-size: 22px;
-      }
-
-      .project-buttons {
-        display: flex;
-        flex-direction: column;
-      }
+      // .project-buttons {
+      //   display: flex;
+      //   flex-direction: column;
+      // }
     }
   }
+
+  .memory-game {
+    background: url("../IMAGES/memorygame.jpg");
+    background-size: cover;
+
+    .project-inner-div {
+      background: rgba(rgb(92, 60, 57), 0.7);
+    }
+  }
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.project-title:hover {
+  font-size: 22px;
+}
+
+.project-inner-div {
+  width: 100%;
+  height: 100%;
+  background: rgba(rgb(92, 60, 57), 0.5);
+  display: grid;
 }
 
 .project-btn {

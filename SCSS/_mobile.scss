@@ -250,6 +250,12 @@
         }
     }
 
+    .projects-info {
+        .project-div {
+            margin-right: 1rem;
+        }
+    }
+    
     .contact-info {
         grid-template-areas: 
         'contact-image' 
@@ -544,6 +550,12 @@
         .projects-info {
             text-align: center;
             width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .project-div {
+                margin-top: 1rem;
+            }
         }
     }
 
