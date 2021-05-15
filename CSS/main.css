@@ -402,22 +402,39 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr); }
   .projects-info .tic-tac-toe {
-    background: url("../IMAGES/programmer_new.jpg");
+    background: url("../IMAGES/tictactoe.png");
     background-size: cover;
     height: 13rem;
     width: 13rem;
     text-align: center;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 3px solid #643d42; }
-    .projects-info .tic-tac-toe div {
+    border-radius: 2px;
+    border: 2px solid #643d42; }
+    .projects-info .tic-tac-toe .project-inner-div {
       width: 100%;
       height: 100%;
-      font-size: 1.9rem;
-      display: flex;
-      align-items: center;
       background: rgba(92, 60, 57, 0.5);
-      border-radius: 50%; }
+      display: grid; }
+      .projects-info .tic-tac-toe .project-inner-div .project-title {
+        font-weight: bold;
+        font-size: 20px; }
+      .projects-info .tic-tac-toe .project-inner-div .project-title:hover {
+        font-size: 22px; }
+      .projects-info .tic-tac-toe .project-inner-div .project-buttons {
+        display: flex;
+        flex-direction: column; }
+
+.project-btn {
+  cursor: pointer;
+  height: 1.5rem;
+  border: 1.5px solid #643d42;
+  background-color: #646060;
+  width: 90%;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #e2d9d9; }
+
+.project-btn:hover {
+  font-size: 12px; }
 
 .contact-info {
   margin-top: 12vh;
