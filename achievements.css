@@ -94,7 +94,11 @@ ul {
     width: 100%;
 }
 
-.umuzi-img, .hustle-img {
+/* .umuzi-img, .hustle-img {
+    height: 12rem;
+} */
+
+.hustle-img {
     height: 12rem;
 }
 
@@ -200,9 +204,14 @@ ul {
     .achievements-div {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        /* row-gap: 4rem; */
     }
 
-    .umuzi-img, .hustle-img {
-        height: 16rem;
+    .hustle-div {
+        height: 27rem;
+    }
+
+    .hustle-img {
+        height: 90%;
     }
 }
