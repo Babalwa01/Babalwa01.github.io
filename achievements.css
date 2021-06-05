@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    color: rgb(228, 218, 218);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header-container {
+    background: url(./images/achievementsbackground.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 4rem;
+}
+
+.header-inner-container p {
+    color: rgb(235, 228, 228);
+}
+
+.intro-heading {
+    font-weight:bolder;
+    font-size: 28px;
+    text-align: center;
+}
+
+.intro-p {
+    font-weight:bolder;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.achievements-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievements-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.achievement-div {
+    width: 90%;
+    background-color: rgb(61, 60, 60);
+    margin-bottom: 1.5rem;
+    border: 1px solid rgb(61, 60, 60);
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievement-img {
+    width: 100%;
+}
+
+.umuzi-img, .hustle-img {
+    height: 12rem;
+}
+
+.achievement-p {
+    text-align: center;
+    width: 90%;
+    margin-top: 1rem;
+    color: rgb(202, 199, 199);
+    height: 40%;
+    font-size: 15px;
+}
+
+#umuzi-link {
+    font-style: italic;
+    color: #bac964;
+    text-decoration: underline;
+}
+
+.footer-container {
+    margin-top: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.copyright-p {
+    color: rgb(190, 186, 186);
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.lime-text {
+    color: #bac964;
+}
+
+.social-icons {
+    width: 90%;
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    background-color: rgb(78, 77, 77);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    border: 1.5px solid #bac964;
+    margin: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    max-width: 50%;
+}
+
+/* Large screens */
+@media screen and (min-width: 768px) and (max-width: 1170px){
+    .intro-heading {
+        font-size: 38px;
+        margin-top: 8rem;
+    }
+
+    .intro-p {
+        font-size: 24px;
+        margin-top: 7vh;
+    }
+
+    .achievements-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Extra large screens */
+@media screen and (min-width:1171px) {
+    .intro-heading {
+        font-size: 50px;
+        margin-top: 4rem;
+    }
+
+    .intro-p {
+        font-size: 24px;
+        margin-top: 7vh;
+    }
+
+    #achievements-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 3%;
+    }
+
+    .achievements-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .umuzi-img, .hustle-img {
+        height: 16rem;
+    }
+}

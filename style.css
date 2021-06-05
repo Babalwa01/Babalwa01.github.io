@@ -1,0 +1,725 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    color: rgb(228, 218, 218);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header-container {
+    background: url(./images/babalwaedit.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    /* height: 45rem; */
+}
+
+.side-menu {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* height: 52vh; */
+    height: 4rem;
+    padding-top: 0.4rem;
+    padding-left: 1rem;
+}
+
+#menu-icon-div {
+    border: 1px solid gray;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 20%;
+    height: 80%;
+    margin-top: 0.1%;
+    cursor: pointer;
+}
+
+#menu-icon {
+    max-width: 100%;
+    height: 95%;
+}
+
+.side-menu-ul-div {
+    margin-left: 1rem;
+    margin-top: 10%;
+    display: none;
+}
+
+.side-menu-ul .side-menu-li {
+    margin-bottom: 7%;
+    color: rgb(46, 44, 44)
+}
+
+.big-menu {
+    display: none;
+}
+
+.intro-p {
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 35vh;
+    /* color: white; */
+    color: rgb(248, 244, 244);
+}
+
+.bold-name {
+    font-weight:bolder;
+    font-size: 50px;
+}
+
+#smaller-intro-text {
+    font-size: 19px;
+}
+
+#about-info {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    width: 100%;
+}
+
+.about-img {
+    max-width: 90%;
+}
+
+.about-div {
+    width: 90%;
+    margin-top: 7.5vh;
+}
+
+.about-heading {
+    /* color: white; */
+    color: rgb(235, 228, 228);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+}
+
+.bold-about {
+    font-weight:bolder;
+}
+
+.about-p {
+    color: rgb(121, 119, 119);
+    font-size: 18px;
+    margin-top: 4vh;
+}
+
+#achievements-link {
+    font-style: italic;
+    color: #bac964;
+    text-decoration: underline;
+}
+
+.buttons-div {
+    margin-top: 2.5rem;
+}
+
+.hire-btn {
+    color: white;
+    background-color: #bac964;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 15px;
+}
+
+.download-btn {
+    color: white;
+    background-color: #6C757D;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 15px;
+}
+
+#skills-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    width: 100%;
+}
+
+.skills-div {
+    width: 90%;
+    margin-top: 7.5vh;
+}
+
+.skills-heading {
+    /* color: white; */
+    color: rgb(235, 228, 228);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+}
+
+.bold-skills {
+    font-weight:bolder;
+}
+
+.inner-skills-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 2.5rem;
+    width: 100%;
+    background-color: rgb(61, 60, 60);
+    padding-top: 2rem;
+}
+
+.skills-icon-div {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #bac964;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+}
+
+.skills-p {
+    color: white;
+    margin-top: 1.5rem;
+}
+
+.skills-icon {
+    max-width: 60%;
+}
+
+.skills-list {
+    margin-top: 1.5rem;
+    width: 100%;
+    font-size: 14px;
+    color: rgb(175, 171, 171);
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5rem;
+    column-gap: 5%;
+    margin-bottom: 2.5rem;
+}
+
+#projects-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    width: 100%;
+}
+
+.projects-div {
+    width: 90%;
+    margin-top: 7.5vh;
+}
+
+.projects-heading {
+    /* color: white; */
+    color: rgb(235, 228, 228);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+}
+
+.bold-projects {
+    font-weight:bolder;
+}
+
+.projects-inner-div {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+}
+
+.project-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.project-img {
+    max-width: 100%;
+    border-radius: 3px;
+    height: 19rem;
+    box-shadow: 0 0 0.8rem 0 #353434;
+}
+
+.project-name {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: rgb(230, 224, 224);
+    font-size: 22px;
+}
+
+.project-live-btn {
+    width: 5rem;
+    height: 1.5rem;
+    color: white;
+    background-color: #bac964;
+    border-radius: 15px;
+}
+
+.project-github-btn {
+    width: 5rem;
+    height: 1.5rem;
+    color: white;
+    background-color: #6C757D;
+    border-radius: 15px;
+}
+
+.memory-game-div {
+    margin-top: 4.5rem;
+}
+
+.task-app-div {
+    margin-top: 4.5rem;
+}
+
+.github-p {
+    margin-top: 1.5rem;
+    color: rgb(230, 224, 224);
+}
+
+.github-text {
+    font-style: italic;
+    color: #bac964;
+    text-decoration: underline;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    width: 100%;
+}
+
+.contact-heading {
+    /* color: white; */
+    color: rgb(235, 228, 228);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+}
+
+.bold-contact {
+    font-weight:bolder;
+}
+
+.contact-div {
+    width: 90%;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    width: 100%;
+}
+
+.form-and-details-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    width: 100%;
+}
+
+.form-div-p {
+    margin-top: 1.5rem;
+    color: rgb(230, 224, 224);
+    font-size: 16px;
+}
+
+.contact-form {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.input-box {
+    border: none;
+    width: 90%;
+    height: 2.8rem;
+    padding-left: 1rem;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: rgb(61, 60, 60);
+    color: rgb(240, 235, 235);
+}
+
+.input-area {
+    border: none;
+    width: 90%;
+    padding-left: 1rem;
+    height: 18rem;
+    font-size: 17px;
+    border-radius: 5px;
+    padding-top: 1rem;
+    background-color: rgb(61, 60, 60);
+}
+
+.send-message-btn {
+    width: 45%;
+    height: 2.5rem;
+    background-color: #bac964;
+    color: white;
+    border-radius: 22px;
+    margin-top: 2rem;
+    margin-left: 5%;
+    margin-right: 50%;
+}
+
+.details-div {
+    width: 90%;
+}
+
+.details-p {
+    margin-top: 3rem;
+    color: rgb(230, 224, 224);
+    font-size: 28px;
+}
+
+.email-div {
+    margin-top: 2rem;
+}
+
+.email-heading-p {
+    font-size: 20px;
+    color: #384c61;
+}
+
+.email-p {
+    margin-top: 0.8rem;
+    font-size: 18px;
+    color: rgb(190, 186, 186);
+    font-style: italic;
+}
+
+.footer-container {
+    margin-top: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.copyright-p {
+    color: rgb(190, 186, 186);
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.lime-text {
+    color: #bac964;
+}
+
+.social-icons {
+    width: 90%;
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    background-color: rgb(78, 77, 77);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    border: 1.5px solid #bac964;
+    margin: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    max-width: 50%;
+}
+
+/* Large screens */
+@media screen and (min-width: 769px) and (max-width: 1170px){
+
+    .side-menu {
+        display: none;
+    }
+
+    .header-container {
+        width: 100%;
+        /* height:max-content; */
+        position: relative;
+    }
+
+    .big-menu {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        color: rgb(233, 229, 229);
+    }
+
+    .big-menu-ul {
+        display: flex;
+        margin-top: 3.3rem;
+    }
+
+    .big-menu-ul .big-menu-li {
+        margin-right: 2rem;
+        color: white;
+        /* color: rgb(233, 229, 229); */
+        font-weight: bolder;
+    }
+
+    
+    .big-menu-ul .big-menu-li:hover {
+        color: #bac964;
+    }
+
+    .intro-p {
+        font-size: 60px;
+    }
+
+    .main-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-div {
+        width: 90%;
+        margin-top: 0;
+        height: 100%;
+    }
+
+    #about-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .skills-list {
+        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 1.5rem;
+        column-gap: 5%;
+    }
+
+    .inner-skills-div {
+        margin-top: 4rem;
+    }
+
+    .project-div {
+        height: 100%;
+    }
+
+    .projects-inner-div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        margin-top: 0;
+    }
+
+    .tic-tac-toe-div {
+        margin-top: 4.5rem;
+    }
+
+    .github-p {
+        grid-column: 1/4;
+        width: 100%;
+        /* background-color: pink; */
+        text-align: center;
+    }
+
+    .form-and-details-div {
+        display: grid;
+        grid-template-columns: 2.3fr 1.7fr;
+    }
+
+    .details-div {
+        height: 100%;
+    }
+
+    .send-message-btn {
+        width: 12rem;
+        margin-left: 0;
+    }
+}
+
+/* Extra large screens */
+@media screen and (min-width:1171px) {
+    .side-menu {
+        display: none;
+    }
+
+    /* .header-container {
+        width: 100%;
+        position: relative;
+    } */
+
+    .big-menu {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        color: rgb(233, 229, 229);
+    }
+
+    .big-menu-ul {
+        display: flex;
+        margin-top: 3.3rem;
+    }
+
+    .big-menu-ul .big-menu-li {
+        margin-right: 2.5rem;
+        font-weight: bold;
+    }
+
+    .big-menu-ul .big-menu-li:hover {
+        color: #bac964;
+    }
+
+    .intro-p {
+        font-size: 60px;
+        font-weight: bolder;
+    }
+
+    .main-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-div {
+        width: 90%;
+        margin-top: 0;
+        height: 100%;
+    }
+
+    #about-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .skills-div {
+        margin-top: 7rem;
+    }
+
+    .inner-skills-div {
+        margin-top: 4rem;
+    }
+
+    .skills-heading {
+        text-align: center;
+    }
+
+    .skills-p {
+        font-weight: bolder;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 1.5rem;
+        column-gap: 5%;
+        font-size: 20px;
+    }
+
+    .projects-heading {
+        text-align: center;
+    }
+
+    .projects-div {
+        margin-top: 7rem;
+    }
+
+    /* to edit */
+    /* .inner-skills-div {
+        margin-top: 4rem;
+    } */
+
+    .project-div {
+        height: 100%;
+    }
+
+    .projects-inner-div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        margin-top: 0;
+    }
+
+    .tic-tac-toe-div {
+        margin-top: 4.5rem;
+    }
+
+    .github-p {
+        grid-column: 1/4;
+        width: 100%;
+        /* background-color: pink; */
+        text-align: center;
+    }
+
+    .form-and-details-div {
+        display: grid;
+        grid-template-columns: 2fr 1.7fr;
+        margin-left: 35%;
+        margin-right: 20%;
+    }
+
+    .details-div {
+        height: 100%;
+    }
+
+    .send-message-btn {
+        width: 12rem;
+       margin-right: 68%;
+    }
+}
