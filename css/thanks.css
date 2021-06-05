@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    color: rgb(228, 218, 218);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header-container {
+    background: url(../images/achievementsbackground.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 4rem;
+}
+
+.header-inner-container p {
+    color: rgb(235, 228, 228);
+}
+
+.intro-heading {
+    font-weight:bolder;
+    font-size: 28px;
+    text-align: center;
+}
+
+.intro-p {
+    font-weight:bolder;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.home-page-link {
+    text-decoration: underline;
+    font-style: italic;
+}
