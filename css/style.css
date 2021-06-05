@@ -407,6 +407,7 @@ ul {
     border-radius: 5px;
     padding-top: 1rem;
     background-color: rgb(61, 60, 60);
+    color: rgb(240, 235, 235);
 }
 
 .send-message-btn {
