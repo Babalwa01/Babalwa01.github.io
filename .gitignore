@@ -11,8 +11,6 @@
 *.sln.docstates
 
 # Personal files and folders
-docs/
-images/
 .vscode/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
