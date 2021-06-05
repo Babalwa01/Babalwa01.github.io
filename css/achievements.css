@@ -27,7 +27,7 @@ ul {
 }
 
 .header-container {
-    background: url(./images/achievementsbackground.jpg) no-repeat center;
+    background: url(../images/achievementsbackground.jpg) no-repeat center;
     background-size: cover;
     height: 100vh;
     display: flex;

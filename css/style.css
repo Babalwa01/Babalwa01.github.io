@@ -26,22 +26,25 @@ ul {
 }
 
 .header-container {
-    background: url(./images/babalwaedit.jpg) no-repeat center;
+    background: url(../images/babalwaedit.jpg) no-repeat center;
     background-size: cover;
     height: 100vh;
     /* height: 45rem; */
 }
 
 .side-menu {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     /* height: 52vh; */
     height: 4rem;
     padding-top: 0.4rem;
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
+    width: 100%;
+    transition: 0.2s;
 }
 
 #menu-icon-div {
     border: 1px solid gray;
+    margin-left: 1rem;
     border-radius: 2px;
     display: flex;
     justify-content: center;
@@ -49,24 +52,33 @@ ul {
     align-content: center;
     width: 20%;
     height: 80%;
-    margin-top: 0.1%;
+    /* margin-top: 0.1%; */
     cursor: pointer;
 }
 
 #menu-icon {
     max-width: 100%;
-    height: 95%;
+    /* height: 95%; */
+    height: 3rem;
 }
 
 .side-menu-ul-div {
-    margin-left: 1rem;
-    margin-top: 10%;
+    /* margin-left: 1rem; */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-left: 2rem;
+    height: 14rem;
+    padding-top: 2rem;
     display: none;
 }
 
 .side-menu-ul .side-menu-li {
-    margin-bottom: 7%;
-    color: rgb(46, 44, 44)
+    margin-bottom: 19%;
+    color: rgb(46, 44, 44);
+}
+
+.side-menu-li:hover {
+    color: #535835;
 }
 
 .big-menu {
