@@ -139,6 +139,12 @@ ul {
     margin-top: 4vh;
 }
 
+.umuzi-text {
+    font-style: italic;
+    color: #bac964;
+    text-decoration: underline;
+}
+
 #achievements-link {
     font-style: italic;
     color: #bac964;
