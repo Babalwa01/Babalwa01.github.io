@@ -309,6 +309,14 @@ ul {
     margin-top: 4.5rem;
 }
 
+.memory-game-name {
+    text-align: center;
+}
+
+.responsiveness-text {
+    font-size: 12px;
+}
+
 .task-app-div {
     margin-top: 4.5rem;
 }
