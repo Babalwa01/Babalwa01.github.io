@@ -319,16 +319,12 @@ ul {
     text-align: center;
 }
 
-.responsiveness-text {
-    font-size: 12px;
-}
-
 .task-app-div {
     margin-top: 4.5rem;
 }
 
 .github-p {
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     color: rgb(230, 224, 224);
 }
 
