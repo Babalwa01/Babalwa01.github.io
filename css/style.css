@@ -420,6 +420,7 @@ ul {
     padding-top: 1rem;
     background-color: rgb(61, 60, 60);
     color: rgb(240, 235, 235);
+    margin-bottom: 0.5em;
 }
 
 .send-message-btn {
