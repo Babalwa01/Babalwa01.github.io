@@ -420,7 +420,11 @@ ul {
     padding-top: 1rem;
     background-color: rgb(61, 60, 60);
     color: rgb(240, 235, 235);
-    margin-bottom: 0.5em;
+    /* margin-bottom: 0.5em; */
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
 }
 
 .send-message-btn {
@@ -433,7 +437,7 @@ ul {
     margin-left: 5%;
     margin-right: 50%;
     font-size: 90%;
-    margin-top: 0.5em;
+    /* margin-top: 0.5em; */
 }
 
 .details-div {
