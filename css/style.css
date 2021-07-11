@@ -79,8 +79,12 @@ ul {
     color: rgb(46, 44, 44);
 }
 
-.side-menu-li:hover {
+.side-menu-li a:hover {
     color: #535835;
+}
+
+.side-menu-item {
+    color: rgb(46, 44, 44);
 }
 
 .big-menu {
@@ -153,8 +157,9 @@ ul {
 
 .buttons-div {
     margin-top: 2.5rem;
+    display: flex;
 }
-
+/* ------------ */
 .hire-btn {
     color: white;
     background-color: #bac964;
@@ -162,6 +167,10 @@ ul {
     height: 2rem;
     border-radius: 15px;
     font-size: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.4rem;
 }
 
 .download-btn {
@@ -171,6 +180,9 @@ ul {
     height: 2rem;
     border-radius: 15px;
     font-size: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #skills-info {
@@ -302,6 +314,10 @@ ul {
     background-color: #bac964;
     border-radius: 15px;
     font-size: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
 }
 
 .project-github-btn {
@@ -311,6 +327,13 @@ ul {
     background-color: #6C757D;
     border-radius: 15px;
     font-size: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-buttons-div {
+    display: flex;
 }
 
 .memory-game-div {
@@ -550,7 +573,7 @@ input:focus, textarea:focus, select:focus{
     }
 
     
-    .big-menu-ul .big-menu-li:hover {
+    .big-menu-ul .big-menu-li a:hover {
         color: #bac964;
     }
 
@@ -658,7 +681,7 @@ input:focus, textarea:focus, select:focus{
         font-weight: bold;
     }
 
-    .big-menu-ul .big-menu-li:hover {
+    .big-menu-ul .big-menu-li a:hover {
         color: #bac964;
     }
 
